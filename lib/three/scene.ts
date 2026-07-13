@@ -1,16 +1,20 @@
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 /**
- * Escena WebGL ambiental para el hero (prompt.md secc. 2-3): objetos low-poly flotantes
- * (bolígrafo, caja de regalo, "blade" metálico inspirado en el logo) que reaccionan a la
- * profundidad de scroll y al puntero. Geometría procedural (sin .glb externos) para que el
- * bundle no dependa de assets binarios pesados.
+ * Escena WebGL ambiental para el hero (prompt.md secc. 2-3): objetos flotantes que reaccionan
+ * a la profundidad de scroll y al puntero. Los modelos son productos reales del catálogo
+ * (organizador de bambú, parlante de madera, botella térmica) modelados y exportados a .glb
+ * desde Blender — ver scripts en el historial del proyecto — en vez de geometría procedural
+ * genérica, para que el hero muestre productos reconocibles del catálogo.
  */
 
-const COLOR_BRAND = 0x1565ff;
 const COLOR_SKY = 0x00bfff;
 const COLOR_DANGER = 0xff2d2d;
-const COLOR_NAVY = 0x0a1a2f;
+
+const MODEL_SOURCES = ['/models/bamboo-stand.glb', '/models/wood-speaker.glb', '/models/vacuum-bottle.glb'];
+const INSTANCES_PER_MODEL = 3;
+const TARGET_SIZE = 1.7; // unidad de escena a la que se normaliza la dimensión mayor de cada modelo
 
 interface FloatingObject {
   mesh: THREE.Object3D;
@@ -22,66 +26,37 @@ interface FloatingObject {
   depth: number; // 0 = cerca, 1 = lejos — controla cuánto responde al scroll/parallax
 }
 
-function metallic(color: number, extra: Partial<THREE.MeshStandardMaterialParameters> = {}) {
-  return new THREE.MeshStandardMaterial({
-    color,
-    metalness: 0.72,
-    roughness: 0.28,
-    envMapIntensity: 1.1,
-    ...extra,
+/** Carga los 3 modelos y normaliza cada uno a un tamaño y centro consistentes entre sí. */
+async function loadModelTemplates(): Promise<THREE.Object3D[]> {
+  const loader = new GLTFLoader();
+  const scenes = await Promise.all(
+    MODEL_SOURCES.map(
+      (url) =>
+        new Promise<THREE.Object3D>((resolve, reject) => {
+          loader.load(url, (gltf) => resolve(gltf.scene), undefined, reject);
+        })
+    )
+  );
+
+  return scenes.map((template) => {
+    const box = new THREE.Box3().setFromObject(template);
+    const size = new THREE.Vector3();
+    const center = new THREE.Vector3();
+    box.getSize(size);
+    box.getCenter(center);
+    const maxDim = Math.max(size.x, size.y, size.z) || 1;
+    const scale = TARGET_SIZE / maxDim;
+    template.scale.setScalar(scale);
+    template.position.copy(center).multiplyScalar(-scale);
+    template.traverse((child) => {
+      if (child instanceof THREE.Mesh) {
+        child.castShadow = false;
+        child.receiveShadow = false;
+      }
+    });
+    return template;
   });
 }
-
-function createPen(): THREE.Group {
-  const group = new THREE.Group();
-  const body = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 2.1, 12), metallic(COLOR_BRAND));
-  const tip = new THREE.Mesh(new THREE.ConeGeometry(0.16, 0.42, 12), metallic(COLOR_SKY, { metalness: 0.9, roughness: 0.15 }));
-  tip.position.y = 1.26;
-  const clip = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.9, 0.06), metallic(COLOR_NAVY, { metalness: 0.85 }));
-  clip.position.set(0.18, 0.2, 0);
-  group.add(body, tip, clip);
-  group.rotation.z = Math.PI * 0.18;
-  return group;
-}
-
-function createGiftBox(): THREE.Group {
-  const group = new THREE.Group();
-  const box = new THREE.Mesh(new THREE.BoxGeometry(1.15, 1.0, 1.15), metallic(0xffffff, { metalness: 0.15, roughness: 0.55 }));
-  const ribbonX = new THREE.Mesh(new THREE.BoxGeometry(1.22, 1.06, 0.16), metallic(COLOR_DANGER, { metalness: 0.5, roughness: 0.3 }));
-  const ribbonZ = new THREE.Mesh(new THREE.BoxGeometry(0.16, 1.06, 1.22), metallic(COLOR_DANGER, { metalness: 0.5, roughness: 0.3 }));
-  const bow = new THREE.Mesh(new THREE.TorusKnotGeometry(0.12, 0.045, 64, 8, 2, 3), metallic(COLOR_DANGER, { metalness: 0.6, roughness: 0.25 }));
-  bow.position.y = 0.62;
-  group.add(box, ribbonX, ribbonZ, bow);
-  return group;
-}
-
-function createBlade(): THREE.Mesh {
-  // Forma inspirada en el ícono de marca: prisma delgado y alargado, "torcido" con escala no
-  // uniforme para sugerir una hoja/blade metálica en vez de un bloque genérico.
-  const geometry = new THREE.BoxGeometry(0.22, 1.9, 0.06, 1, 4, 1);
-  const position = geometry.attributes.position as THREE.BufferAttribute;
-  for (let i = 0; i < position.count; i += 1) {
-    const y = position.getY(i);
-    const twist = (y / 1.9) * 0.35;
-    const x = position.getX(i);
-    const z = position.getZ(i);
-    position.setX(i, x * Math.cos(twist) - z * Math.sin(twist));
-    position.setZ(i, x * Math.sin(twist) + z * Math.cos(twist));
-  }
-  geometry.computeVertexNormals();
-  const mesh = new THREE.Mesh(geometry, metallic(COLOR_DANGER, { metalness: 0.85, roughness: 0.18 }));
-  mesh.rotation.z = Math.PI * 0.12;
-  return mesh;
-}
-
-function createGadget(): THREE.Mesh {
-  return new THREE.Mesh(
-    new THREE.IcosahedronGeometry(0.62, 0),
-    metallic(COLOR_SKY, { metalness: 0.8, roughness: 0.2, flatShading: true })
-  );
-}
-
-const FACTORIES = [createPen, createGiftBox, createBlade, createGadget, createPen, createGiftBox, createGadget];
 
 export interface HeroAmbientScene {
   setScrollProgress: (progress: number) => void;
@@ -116,31 +91,47 @@ export function setupHeroAmbientScene({
   const group = new THREE.Group();
   scene.add(group);
 
-  const objects: FloatingObject[] = FACTORIES.map((factory, i) => {
-    const mesh = factory();
-    const depth = i / (FACTORIES.length - 1);
-    const angle = (i / FACTORIES.length) * Math.PI * 2;
-    const radius = 2.6 + depth * 2.2;
-    mesh.position.set(Math.cos(angle) * radius * 0.6, Math.sin(angle) * radius * 0.35, -depth * 5.5);
-    const scale = 0.75 + Math.random() * 0.5;
-    mesh.scale.setScalar(scale);
-    group.add(mesh);
-    return {
-      mesh,
-      spinSpeed: new THREE.Vector2((Math.random() - 0.5) * 0.006, (Math.random() - 0.5) * 0.008),
-      bobFreq: 0.4 + Math.random() * 0.5,
-      bobAmp: 0.18 + Math.random() * 0.22,
-      bobPhase: Math.random() * Math.PI * 2,
-      baseY: mesh.position.y,
-      depth,
-    };
-  });
+  const objects: FloatingObject[] = [];
+  let disposed = false;
+
+  loadModelTemplates()
+    .then((templates) => {
+      if (disposed) return;
+      const slots = templates.flatMap((template) => Array(INSTANCES_PER_MODEL).fill(template));
+      const total = slots.length;
+
+      slots.forEach((template, i) => {
+        const mesh = template.clone(true);
+        const depth = i / (total - 1);
+        const angle = (i / total) * Math.PI * 2;
+        const radius = 2.6 + depth * 2.2;
+        mesh.position.x += Math.cos(angle) * radius * 0.6;
+        mesh.position.y += Math.sin(angle) * radius * 0.35;
+        mesh.position.z += -depth * 5.5;
+        mesh.rotation.y = angle;
+        const scale = 0.85 + Math.random() * 0.4;
+        mesh.scale.multiplyScalar(scale);
+        group.add(mesh);
+        objects.push({
+          mesh,
+          spinSpeed: new THREE.Vector2((Math.random() - 0.5) * 0.006, (Math.random() - 0.5) * 0.008),
+          bobFreq: 0.4 + Math.random() * 0.5,
+          bobAmp: 0.18 + Math.random() * 0.22,
+          bobPhase: Math.random() * Math.PI * 2,
+          baseY: mesh.position.y,
+          depth,
+        });
+      });
+    })
+    .catch((error) => {
+      // eslint-disable-next-line no-console
+      console.error('heroAmbientScene: no se pudieron cargar los modelos 3D', error);
+    });
 
   let scrollProgress = 0;
   let pointerX = 0;
   let pointerY = 0;
   let frameId = 0;
-  let disposed = false;
   const clock = new THREE.Clock();
 
   function resize() {
