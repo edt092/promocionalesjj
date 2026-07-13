@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1E2229;
+
+  /* Paleta oficial Promocionales J&J */
+  --navy: #0A1A2F;
+  --brand: #1565FF;
+  --sky: #00BFFF;
+  --danger: #FF2D2D;
+  --ink: #1E2229;
+  --slate: #6B7280;
+  --mist: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Perspectiva para tilt cards (sección "Decision Zones" de prompt.md) */
+.tilt-perspective {
+  perspective: 1200px;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn { animation: fadeIn 0.5s ease-out; }
+
+/* Estilos del cuerpo de artículos de blog (HTML simple: h2/p, sin plugin de tipografía) */
+.article-body h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.article-body p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #3A414B;
+}
+
+/* Grano fino usado sobre el hero 3D para reducir el banding del degradado */
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

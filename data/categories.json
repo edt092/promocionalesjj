@@ -1,0 +1,298 @@
+[
+  {
+    "id": "precio-bomba",
+    "slug": "precio-bomba",
+    "name": "Precio Bomba",
+    "description": "Productos promocionales con los mejores precios del mercado.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/precio-bomba.html",
+    "keywords": ["ofertas", "precios bajos"]
+  },
+  {
+    "id": "antiestres",
+    "slug": "antiestres",
+    "name": "Antiestrés",
+    "description": "Artículos antiestrés personalizados para aliviar tensiones en la oficina.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/antiestres.html",
+    "keywords": ["antiestrés", "pelotas antiestrés"]
+  },
+  {
+    "id": "antimicrobianos",
+    "slug": "antimicrobianos",
+    "name": "Antimicrobianos",
+    "description": "Productos con tecnología antimicrobiana para mayor higiene y seguridad.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/antimicrobianos.html",
+    "keywords": ["antimicrobiano", "higiene"]
+  },
+  {
+    "id": "articulos-escritura",
+    "slug": "articulos-escritura",
+    "name": "Artículos de Escritura",
+    "description": "Bolígrafos, lapiceros y sets de escritura personalizados con tu marca.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/articulos-escritura.html",
+    "keywords": ["bolígrafos", "lapiceros"]
+  },
+  {
+    "id": "reflectivos",
+    "slug": "reflectivos",
+    "name": "Reflectivos",
+    "description": "Artículos reflectivos para seguridad vial y visibilidad nocturna.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/reflectivos.html",
+    "keywords": ["reflectivo", "seguridad"]
+  },
+  {
+    "id": "automovil",
+    "slug": "automovil",
+    "name": "Automóvil",
+    "description": "Accesorios promocionales para autos y vehículos.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/automovil.html",
+    "keywords": ["auto", "vehículos"]
+  },
+  {
+    "id": "bar-y-vino",
+    "slug": "bar-y-vino",
+    "name": "Bar y Vino",
+    "description": "Artículos para bar, destapadores, copas y accesorios de vino.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/bar-y-vino.html",
+    "keywords": ["bar", "vino"]
+  },
+  {
+    "id": "bicicleta",
+    "slug": "bicicleta",
+    "name": "Bicicleta",
+    "description": "Accesorios para ciclistas y bicicletas personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/bicicleta.html",
+    "keywords": ["bicicleta", "ciclismo"]
+  },
+  {
+    "id": "calculadoras",
+    "slug": "calculadoras",
+    "name": "Calculadoras",
+    "description": "Calculadoras promocionales para oficina y estudiantes.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/calculadoras.html",
+    "keywords": ["calculadoras", "oficina"]
+  },
+  {
+    "id": "confeccion",
+    "slug": "confeccion",
+    "name": "Confección",
+    "description": "Prendas de vestir y textiles personalizados con tu logo.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/confeccion.html",
+    "keywords": ["ropa", "textiles"]
+  },
+  {
+    "id": "deportes",
+    "slug": "deportes",
+    "name": "Deportes",
+    "description": "Artículos deportivos y accesorios para actividades físicas.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/deportes.html",
+    "keywords": ["deportes", "fitness"]
+  },
+  {
+    "id": "econature",
+    "slug": "econature",
+    "name": "EcoNature",
+    "description": "Productos ecológicos premium de la línea EcoNature.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/econature.html",
+    "keywords": ["eco", "natural"]
+  },
+  {
+    "id": "ecologia",
+    "slug": "ecologia",
+    "name": "Ecología",
+    "description": "Artículos ecológicos y sustentables para empresas responsables.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/ecologia.html",
+    "keywords": ["ecológico", "sustentable"]
+  },
+  {
+    "id": "golf",
+    "slug": "golf",
+    "name": "Golf",
+    "description": "Accesorios de golf personalizados para eventos corporativos.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/golf.html",
+    "keywords": ["golf", "deportes"]
+  },
+  {
+    "id": "gorras",
+    "slug": "gorras",
+    "name": "Gorras",
+    "description": "Gorras y cachuchas personalizadas con bordado o estampado.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/gorras.html",
+    "keywords": ["gorras", "cachuchas"]
+  },
+  {
+    "id": "herramientas",
+    "slug": "herramientas",
+    "name": "Herramientas",
+    "description": "Herramientas promocionales útiles para el hogar y trabajo.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/herramientas.html",
+    "keywords": ["herramientas", "útiles"]
+  },
+  {
+    "id": "hogar",
+    "slug": "hogar",
+    "name": "Hogar",
+    "description": "Artículos para el hogar personalizados con tu marca.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/hogar.html",
+    "keywords": ["hogar", "casa"]
+  },
+  {
+    "id": "iluminacion",
+    "slug": "iluminacion",
+    "name": "Iluminación",
+    "description": "Linternas, lámparas y productos de iluminación personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/iluminacion.html",
+    "keywords": ["linternas", "luces"]
+  },
+  {
+    "id": "infantil",
+    "slug": "infantil",
+    "name": "Infantil",
+    "description": "Productos promocionales para niños y eventos infantiles.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/infantil.html",
+    "keywords": ["niños", "infantil"]
+  },
+  {
+    "id": "juegos",
+    "slug": "juegos",
+    "name": "Juegos",
+    "description": "Juegos de mesa y artículos recreativos personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/juegos.html",
+    "keywords": ["juegos", "entretenimiento"]
+  },
+  {
+    "id": "llaveros",
+    "slug": "llaveros",
+    "name": "Llaveros",
+    "description": "Llaveros promocionales de diversos materiales y estilos.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/llaveros.html",
+    "keywords": ["llaveros", "accesorios"]
+  },
+  {
+    "id": "maletines",
+    "slug": "maletines",
+    "name": "Maletines",
+    "description": "Maletines, portafolios y bolsos ejecutivos personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/maletines.html",
+    "keywords": ["maletines", "portafolios"]
+  },
+  {
+    "id": "master-line",
+    "slug": "master-line",
+    "name": "Master Line",
+    "description": "Productos premium de la línea Master Line.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/master-line.html",
+    "keywords": ["premium", "ejecutivo"]
+  },
+  {
+    "id": "medicos",
+    "slug": "medicos",
+    "name": "Médicos",
+    "description": "Artículos promocionales para el sector salud y médico.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/medicos.html",
+    "keywords": ["médicos", "salud"]
+  },
+  {
+    "id": "memorias-usb",
+    "slug": "memorias-usb",
+    "name": "Memorias USB",
+    "description": "Memorias USB y pendrives personalizados con tu logo.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/memorias-usb.html",
+    "keywords": ["USB", "memorias"]
+  },
+  {
+    "id": "mugs",
+    "slug": "mugs",
+    "name": "Mugs",
+    "description": "Tazas y mugs personalizados para oficina y hogar.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/mugs.html",
+    "keywords": ["tazas", "mugs"]
+  },
+  {
+    "id": "productos-2023",
+    "slug": "productos-2023",
+    "name": "Productos Nuevos",
+    "description": "Los productos más nuevos y tendencias del catálogo.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/productos-2023.html",
+    "keywords": ["nuevos", "tendencias"]
+  },
+  {
+    "id": "oficina",
+    "slug": "oficina",
+    "name": "Oficina",
+    "description": "Artículos de oficina y escritorio personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/oficina.html",
+    "keywords": ["oficina", "escritorio"]
+  },
+  {
+    "id": "paraguas",
+    "slug": "paraguas",
+    "name": "Paraguas",
+    "description": "Paraguas y sombrillas promocionales de alta calidad.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/paraguas.html",
+    "keywords": ["paraguas", "sombrillas"]
+  },
+  {
+    "id": "cuidado-personal",
+    "slug": "cuidado-personal",
+    "name": "Cuidado Personal",
+    "description": "Productos de higiene y cuidado personal personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/cuidado-personal.html",
+    "keywords": ["higiene", "cuidado"]
+  },
+  {
+    "id": "produccion-nacional",
+    "slug": "produccion-nacional",
+    "name": "Producción Nacional",
+    "description": "Productos fabricados localmente con calidad garantizada.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/produccion-nacional.html",
+    "keywords": ["nacional", "local"]
+  },
+  {
+    "id": "relojes",
+    "slug": "relojes",
+    "name": "Relojes",
+    "description": "Relojes promocionales de pared y pulsera personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/relojes.html",
+    "keywords": ["relojes", "tiempo"]
+  },
+  {
+    "id": "tecnologia",
+    "slug": "tecnologia",
+    "name": "Tecnología",
+    "description": "Gadgets tecnológicos y accesorios electrónicos personalizados.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/tecnologia.html",
+    "keywords": ["tecnología", "gadgets"]
+  },
+  {
+    "id": "variedades",
+    "slug": "variedades",
+    "name": "Variedades",
+    "description": "Artículos promocionales variados para toda ocasión.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/variedades.html",
+    "keywords": ["variado", "surtido"]
+  },
+  {
+    "id": "vasos-personalizados",
+    "slug": "vasos-personalizados",
+    "name": "Vasos Personalizados",
+    "description": "Vasos personalizados con tu logo: metálicos, plásticos, de vidrio y ecológicos para regalos corporativos y eventos.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/vasos.html",
+    "keywords": ["vasos personalizados", "vasos publicitarios", "vasos con logo"]
+  },
+  {
+    "id": "termos-personalizados",
+    "slug": "termos-personalizados",
+    "name": "Termos Personalizados",
+    "description": "Termos personalizados con tu logo: acero inoxidable y opciones ecológicas para mantener tu marca presente todo el día.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/termos.html",
+    "keywords": ["termos personalizados", "termos publicitarios", "termos con logo"]
+  },
+  {
+    "id": "tomatodos-y-botilitos-personalizados",
+    "slug": "tomatodos-y-botilitos-personalizados",
+    "name": "Tomatodos y Botilitos Personalizados",
+    "description": "Tomatodos y botilitos personalizados con tu logo: metálicos, plásticos y ecológicos, ideales para regalos corporativos y deportivos.",
+    "providerUrl": "https://www.catalogospromocionales.com/promocionales/botilitos.html",
+    "keywords": ["tomatodos personalizados", "botilitos personalizados", "botellas deportivas con logo"]
+  }
+]
