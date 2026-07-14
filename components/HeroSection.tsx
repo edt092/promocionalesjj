@@ -2,14 +2,13 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import AmbientScene, { AmbientSceneHandle } from './three/AmbientScene';
 import MagneticButton from './MagneticButton';
 import { whatsappHref, WHATSAPP_DEFAULT_MESSAGE } from '@/lib/contact';
 
 /**
- * Hero 3D (prompt.md secc. 3A): split-screen con profundidad en capas — grid geométrico oscuro
- * de fondo (Z0), canvas WebGL ambiental con objetos flotantes (Z1), y texto masivo en primer
- * plano (Z2) que se desplaza más rápido que el fondo al hacer scroll (parallax multicapa).
+ * Hero (prompt.md secc. 3A): split-screen con profundidad en capas — grid geométrico oscuro
+ * de fondo (Z0) y texto masivo en primer plano (Z2) que se desplaza más rápido que el fondo
+ * al hacer scroll (parallax multicapa).
  */
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -19,7 +18,6 @@ export default function HeroSection() {
   const copyRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const scrollIndicatorRef = useRef<HTMLDivElement>(null);
-  const sceneHandleRef = useRef<AmbientSceneHandle>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -58,11 +56,9 @@ export default function HeroSection() {
         intro.fromTo(scrollIndicatorRef.current, { opacity: 0 }, { opacity: 1, duration: 0.6 }, 1.2);
 
         // Profundidad de scroll: el fondo geométrico se mueve más lento que el texto en
-        // primer plano (parallax multicapa pedido en prompt.md), y se sincroniza el progreso
-        // con la escena Three.js para que los objetos flotantes avancen con el scroll.
+        // primer plano (parallax multicapa pedido en prompt.md).
         if (window.innerWidth >= 1024) {
           const scrub = { trigger: section, start: 'top top', end: '+=85%', scrub: 0.8 };
-          ScrollTrigger.create({ ...scrub, onUpdate: (self) => sceneHandleRef.current?.setScrollProgress(self.progress) });
           gsap.to(gridRef.current, { y: '8vh', ease: 'none', scrollTrigger: scrub });
           gsap.to(lines, { y: '-16vh', scale: 0.96, opacity: 0.15, ease: 'none', scrollTrigger: scrub });
           gsap.to(ctaRef.current, { y: '-8vh', opacity: 0, ease: 'none', scrollTrigger: scrub });
@@ -94,12 +90,9 @@ export default function HeroSection() {
       />
       <div aria-hidden="true" className="absolute inset-0 bg-gradiente-primario opacity-90" />
 
-      {/* Z1 — canvas WebGL ambiental (decorativo) */}
-      <AmbientScene ref={sceneHandleRef} className="absolute inset-0 hidden lg:block" />
-
       <div aria-hidden="true" className="noise-overlay absolute inset-0 opacity-[0.04] mix-blend-overlay pointer-events-none" />
 
-      {/* Z2 — contenido, con backdrop-blur para legibilidad sobre el 3D (prompt.md secc. 3A) */}
+      {/* Z2 — contenido, con backdrop-blur para legibilidad sobre el fondo (prompt.md secc. 3A) */}
       <div className="relative z-10 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-x-4 lg:gap-x-6 px-5 sm:px-8 lg:px-10 max-w-[1920px] mx-auto pt-28 lg:pt-32 w-full">
         <p
           ref={eyebrowRef}

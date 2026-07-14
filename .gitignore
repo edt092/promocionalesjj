@@ -35,9 +35,8 @@ next-env.d.ts
 # Netlify local folder
 .netlify
 
-# Este proyecto usa npm (package-lock.json); no versionar artefactos de pnpm
-pnpm-lock.yaml
-pnpm-workspace.yaml
+# Este proyecto usa pnpm (pnpm-lock.yaml); no versionar artefactos de npm
+package-lock.json
 
 # Claude Code local settings
 /.claude/
