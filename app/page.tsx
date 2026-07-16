@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HeroSection from '@/components/HeroSection';
+import ProductShowcase from '@/components/ProductShowcase';
 import CategoryGrid from '@/components/CategoryGrid';
 import ProductRail from '@/components/ProductRail';
 import CTABanner from '@/components/CTABanner';
@@ -41,6 +42,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <ProductShowcase />
       <CategoryGrid />
       <ProductRail id="destacados" title="Productos destacados" products={destacados} />
       <CTABanner />

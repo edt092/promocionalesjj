@@ -57,12 +57,30 @@ export default function HeroSection() {
 
         // Profundidad de scroll: el fondo geométrico se mueve más lento que el texto en
         // primer plano (parallax multicapa pedido en prompt.md).
-        if (window.innerWidth >= 1024) {
-          const scrub = { trigger: section, start: 'top top', end: '+=85%', scrub: 0.8 };
-          gsap.to(gridRef.current, { y: '8vh', ease: 'none', scrollTrigger: scrub });
-          gsap.to(lines, { y: '-16vh', scale: 0.96, opacity: 0.15, ease: 'none', scrollTrigger: scrub });
-          gsap.to(ctaRef.current, { y: '-8vh', opacity: 0, ease: 'none', scrollTrigger: scrub });
-        }
+        // Se crea recién al terminar el intro para que no compita por las mismas
+        // propiedades (opacity/transform) que la animación de entrada — esa pelea es
+        // lo que hacía que el texto desapareciera de golpe en vez de ir apagándose al
+        // ritmo del scroll, y que no volviera a aparecer al subir.
+        const setupScrollParallax = () => {
+          if (window.innerWidth < 1024) return;
+          const scrub = { trigger: section, start: 'top top', end: '+=85%', scrub: 1 };
+          gsap.fromTo(
+            gridRef.current,
+            { y: 0 },
+            { y: '8vh', ease: 'none', immediateRender: false, scrollTrigger: scrub }
+          );
+          gsap.fromTo(
+            lines,
+            { y: 0, scale: 1, opacity: 1 },
+            { y: '-16vh', scale: 0.96, opacity: 0.15, ease: 'none', immediateRender: false, scrollTrigger: scrub }
+          );
+          gsap.fromTo(
+            ctaRef.current,
+            { y: 0, opacity: 1 },
+            { y: '-8vh', opacity: 0, ease: 'none', immediateRender: false, scrollTrigger: scrub }
+          );
+        };
+        intro.eventCallback('onComplete', setupScrollParallax);
       }, section);
 
       revertGsap = () => ctx.revert();
