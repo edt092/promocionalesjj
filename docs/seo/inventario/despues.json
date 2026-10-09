@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "generado": "2026-10-09T03:57:47.051Z",
+    "directorio": "out",
+    "paginasHtml": 951,
+    "porTipo": {
+      "especial": 2,
+      "articulo": 3,
+      "blog": 1,
+      "institucional": 2,
+      "inicio": 1,
+      "ciudad": 5,
+      "hub-colombia": 1,
+      "producto": 840,
+      "categoria": 34,
+      "categoria-paginada": 27,
+      "tienda": 1,
+      "tienda-paginada": 34
+    },
+    "sitemapUrls": 888,
+    "alcanzablesDesdeInicio": 949,
+    "productos": 840,
+    "productosAlcanzables": 840,
+    "productosSinCamino": 0,
+    "bytesTienda": 144044,
+    "bytesInicio": 114037,
+    "incidencias": {}
+  },
+  "unreachableProducts": [],
+  "issues": []
+}

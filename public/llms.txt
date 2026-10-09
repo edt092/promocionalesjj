@@ -1,0 +1,27 @@
+# Promocionales J&J
+
+> Promocionales J&J es un proveedor de productos promocionales y merchandising corporativo personalizado con el logo de cada empresa, con cobertura en Colombia. Las cotizaciones se atienden por WhatsApp (+57 315 5595134). El sitio publica un catálogo de referencias para cotizar; no tiene carrito ni precios públicos.
+
+Sitio: https://www.promocionalesjj.co/ · Idioma: es-CO · Público: empresas (B2B)
+
+## Catálogo
+- [Tienda: catálogo completo](https://www.promocionalesjj.co/tienda/): todas las referencias, paginadas
+- [Artículos de escritura](https://www.promocionalesjj.co/tienda/categoria/articulos-escritura/)
+- [Tecnología](https://www.promocionalesjj.co/tienda/categoria/tecnologia/)
+- [Bolsas](https://www.promocionalesjj.co/tienda/categoria/bolsas/)
+- [Tomatodos y botilitos](https://www.promocionalesjj.co/tienda/categoria/tomatodos-y-botilitos-personalizados/)
+- [Vasos personalizados](https://www.promocionalesjj.co/tienda/categoria/vasos-personalizados/)
+- [Paraguas](https://www.promocionalesjj.co/tienda/categoria/paraguas/)
+- [Promociones](https://www.promocionalesjj.co/promociones/)
+
+## Cobertura
+- [Colombia](https://www.promocionalesjj.co/productos-promocionales-colombia/)
+- [Bogotá](https://www.promocionalesjj.co/productos-promocionales-colombia/bogota/)
+- [Medellín](https://www.promocionalesjj.co/productos-promocionales-colombia/medellin/)
+
+## Guías
+- [Blog](https://www.promocionalesjj.co/blog/)
+
+## Contacto
+- [Contacto y cotización](https://www.promocionalesjj.co/contacto/)
+- [Sitemap](https://www.promocionalesjj.co/sitemap.xml)

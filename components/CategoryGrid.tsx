@@ -1,21 +1,21 @@
 import Link from 'next/link';
-import categoriesData from '@/data/categories.json';
+import { categories } from '@/lib/catalog';
 import ScrollRevealGroup from './ScrollRevealGroup';
 import TiltCard from './TiltCard';
 
 const FEATURED_SLUGS = [
   'articulos-escritura',
-  'mugs',
   'tecnologia',
+  'bolsas',
+  'tomatodos-y-botilitos-personalizados',
+  'mugs',
+  'libretas',
   'llaveros',
-  'gorras',
-  'maletines',
-  'vasos-personalizados',
-  'termos-personalizados',
+  'herramientas',
+  'bar-y-vino',
+  'juegos',
+  'relojes',
   'paraguas',
-  'confeccion',
-  'oficina',
-  'deportes',
 ];
 
 /**
@@ -24,7 +24,9 @@ const FEATURED_SLUGS = [
  * blueprint informe_promodirect_frontend_seo.md.
  */
 export default function CategoryGrid() {
-  const featured = categoriesData.filter((c) => FEATURED_SLUGS.includes(c.slug));
+  const featured = FEATURED_SLUGS.map((slug) => categories.find((c) => c.slug === slug)).filter(
+    (c): c is (typeof categories)[number] => Boolean(c)
+  );
 
   return (
     <section id="categorias" className="py-16 sm:py-24 bg-white">
@@ -33,8 +35,8 @@ export default function CategoryGrid() {
           <p className="text-sm font-semibold uppercase tracking-wider text-brand mb-2">Catálogo</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-ink-700">Explora por categoría</h2>
           <p className="mt-3 text-slate-500">
-            Más de {categoriesData.length} categorías de artículos promocionales personalizables con tu logo,
-            listos para empresas en toda Colombia.
+            {categories.length} categorías de artículos promocionales personalizables con tu logo para
+            empresas en Colombia.
           </p>
         </div>
         <ScrollRevealGroup
@@ -50,8 +52,8 @@ export default function CategoryGrid() {
                 <span className="text-base font-semibold text-ink-700 group-hover:text-brand transition-colors">
                   {cat.name}
                 </span>
-                <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-slate-400 group-hover:text-sky-500">
-                  Ver productos
+                <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-slate-500 group-hover:text-sky-700">
+                  {cat.count} productos
                   <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>
@@ -61,7 +63,7 @@ export default function CategoryGrid() {
           ))}
         </ScrollRevealGroup>
         <div className="mt-8 text-center">
-          <Link href="/tienda/" className="text-sm font-semibold text-brand hover:text-brand-600 transition-colors">
+          <Link href="/tienda/" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand hover:text-brand-600 transition-colors">
             Ver todas las categorías →
           </Link>
         </div>

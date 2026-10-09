@@ -20,9 +20,8 @@ export function Logo({
       <Image
         src="/promocionalesjj_icon.png"
         alt=""
-        width={497}
-        height={358}
-        priority
+        width={56}
+        height={40}
         className={`w-auto ${className}`}
       />
       <span className={`font-extrabold leading-none tracking-tight ${textClassName ?? 'text-white'}`}>

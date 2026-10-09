@@ -1,0 +1,285 @@
+{
+  "inicio/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "Merchandising quedeja marca en Colombia.",
+    "h1Recortado": true,
+    "h1Top": 174,
+    "ctaTop": 495,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 24,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "tienda-p2/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "No encontramos esta página",
+    "h1Recortado": false,
+    "h1Top": 243,
+    "ctaTop": null,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 23,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "categoria-vasos/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "Vasos Personalizados Personalizados",
+    "h1Recortado": false,
+    "h1Top": 132,
+    "ctaTop": null,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 25,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "producto/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "Trevon",
+    "h1Recortado": false,
+    "h1Top": 172,
+    "ctaTop": 322,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 26,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "producto-sin-foto/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "Hamond Stylus",
+    "h1Recortado": false,
+    "h1Top": 172,
+    "ctaTop": 322,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 26,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "ciudad-bogota/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "Productos Promocionales en Bogotá",
+    "h1Recortado": false,
+    "h1Top": 132,
+    "ctaTop": 708,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 25,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "contacto/escritorio": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 7,
+    "h1": "No encontramos esta página",
+    "h1Recortado": false,
+    "h1Top": 243,
+    "ctaTop": null,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 23,
+    "ejemplosPequenas": [
+      "Inicio",
+      "Tienda",
+      "Colombia",
+      "Promociones",
+      "Blog"
+    ]
+  },
+  "inicio/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "Merchandising quedeja marca en Colombia.",
+    "h1Recortado": true,
+    "h1Top": 178,
+    "ctaTop": 532,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 20,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "Ver todas las categorías →",
+      "WhatsApp: +57 315 5595134",
+      "Artículos de Escritura",
+      "Gorras"
+    ]
+  },
+  "tienda-p2/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "No encontramos esta página",
+    "h1Recortado": false,
+    "h1Top": 241,
+    "ctaTop": null,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 19,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "WhatsApp: +57 315 5595134",
+      "Artículos de Escritura",
+      "Gorras",
+      "Llaveros"
+    ]
+  },
+  "categoria-vasos/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "Vasos Personalizados Personalizados",
+    "h1Recortado": false,
+    "h1Top": 132,
+    "ctaTop": null,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 21,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "Inicio",
+      "Tienda",
+      "WhatsApp: +57 315 5595134",
+      "Artículos de Escritura"
+    ]
+  },
+  "producto/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "Trevon",
+    "h1Recortado": false,
+    "h1Top": 562,
+    "ctaTop": 708,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 22,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "Inicio",
+      "Tienda",
+      "Artículos de Escritura",
+      "WhatsApp: +57 315 5595134"
+    ]
+  },
+  "producto-sin-foto/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "Hamond Stylus",
+    "h1Recortado": false,
+    "h1Top": 588,
+    "ctaTop": 760,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 22,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "Inicio",
+      "Tienda",
+      "Artículos de Escritura",
+      "WhatsApp: +57 315 5595134"
+    ]
+  },
+  "ciudad-bogota/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "Productos Promocionales en Bogotá",
+    "h1Recortado": false,
+    "h1Top": 132,
+    "ctaTop": 1070,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 21,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "Inicio",
+      "Colombia",
+      "WhatsApp: +57 315 5595134",
+      "Artículos de Escritura"
+    ]
+  },
+  "contacto/movil": {
+    "overflowX": false,
+    "navBg": "rgb(10, 26, 47)",
+    "wordmarkContrast": 17.48,
+    "burgerContrast": null,
+    "navLinksVisibles": 1,
+    "h1": "No encontramos esta página",
+    "h1Recortado": false,
+    "h1Top": 241,
+    "ctaTop": null,
+    "ctaSolapaFlotante": false,
+    "zonasTactilesPequenas": 19,
+    "ejemplosPequenas": [
+      "PromocionalesJ&J",
+      "WhatsApp: +57 315 5595134",
+      "Artículos de Escritura",
+      "Gorras",
+      "Llaveros"
+    ]
+  },
+  "menu-movil/teclado": {
+    "primerFoco": "Inicio"
+  }
+}

@@ -1,0 +1,237 @@
++ categoría nueva: bolsas
++ categoría nueva: libretas
+secundaria speaker-bluetooth-clock-eco: + tecnologia
+secundaria reloj-lcd-bamboo: + relojes
+secundaria reloj-wall-bamboo: + relojes
+secundaria botilito-plastico-clemen-rpet-600ml: + tomatodos-y-botilitos-personalizados
+secundaria bolsa-en-cambrel-fest: + bolsas
+secundaria bolsa-en-yute-wine: + bolsas
+secundaria paraguas-golf-cuadrado-30: + paraguas
+secundaria florero-inox-produccion-nacional: + produccion-nacional
+secundaria cargador-inalambrico-con-lampara-flex: + tecnologia
+secundaria sporty-bag-metallic: + bolsas
+secundaria bolsa-plegable-para-paraguas-hansel: + bolsas
+primaria  paraguas-lancelot-27: variedades -> paraguas
+primaria  botilito-plastico-mack-petg-700ml: mugs -> tomatodos-y-botilitos-personalizados
+primaria  botilito-plastico-santino-650ml: mugs -> tomatodos-y-botilitos-personalizados
+primaria  botilito-plastico-alepy-petg-750ml: mugs -> tomatodos-y-botilitos-personalizados
+primaria  botilito-plastico-nomix-petg-750ml: mugs -> tomatodos-y-botilitos-personalizados
+primaria  botilito-plastico-cork-650ml: mugs -> tomatodos-y-botilitos-personalizados
+primaria  botilito-en-tritan-swat-600ml: mugs -> tomatodos-y-botilitos-personalizados
+secundaria bolsa-metalizada-hologram: + bolsas
+primaria  cargador-inalambrico-heston: variedades -> tecnologia
+primaria  speaker-bluetooth-con-lampara: variedades -> tecnologia
+primaria  audifono-bluetooth-manos-libres-2-1: variedades -> tecnologia
+primaria  puerto-usb-gyro: variedades -> tecnologia
+primaria  reloj-digital-bowen: variedades -> relojes
+primaria  pvc-memoria-usb-soccer-ver-of-228-ch: variedades -> memorias-usb
+secundaria pvc-memoria-usb-soccer-ver-of-228-ch: + tecnologia
+secundaria botilito-metalico-shelby-600ml: + tomatodos-y-botilitos-personalizados
+secundaria memoria-usb-boligrafo-king-precio-neto: + memorias-usb
+secundaria memoria-usb-boligrafo-king-precio-neto: + tecnologia
+secundaria estuche-para-resaltador-magico-produccion-nacional: + produccion-nacional
+secundaria estuche-carton-produccion-nacional: + produccion-nacional
+secundaria estuche-clear-produccion-nacional: + produccion-nacional
+secundaria paraguas-brook-ergo-27-reflectivo: + paraguas
+secundaria gorra-sport-en-microfibra-urban-travel: + gorras
+secundaria sporty-bag-reflectiva-security: + bolsas
+secundaria gorra-emergency: + gorras
+secundaria bolsa-reflectiva-security: + bolsas
+secundaria bolsa-plegable-reflect: + bolsas
+secundaria sporty-bag-reflective: + bolsas
+secundaria nevera-wine-cooler-bag-produccion-nacional: + produccion-nacional
+primaria  set-portavasos-bamboo-puzzle: vasos-personalizados -> hogar
+secundaria hielera-plastica-produccion-nacional: + produccion-nacional
+primaria  speaker-bluetooth-bamboo-3-1: variedades -> tecnologia
+primaria  speaker-bluetooth-mack: variedades -> tecnologia
+primaria  speaker-de-induccion-bamboo: variedades -> tecnologia
+primaria  speaker-bluetooth-retro-bamboo: variedades -> tecnologia
+primaria  cargador-inalambrico-bamboo-clock: variedades -> tecnologia
+primaria  cargador-inalambrico-coileco: variedades -> tecnologia
+primaria  cargador-inalambrico-magnet-3-1-eco: variedades -> tecnologia
+primaria  speaker-bluetooth-novark: variedades -> tecnologia
+primaria  reloj-con-portaboligrafo-bamboo: variedades -> relojes
+primaria  reloj-con-cargador-inalambrico-denver: variedades -> relojes
+primaria  speaker-bluetooth-bamboo-eco: variedades -> tecnologia
+primaria  cargador-inalambrico-con-tablero-eco: variedades -> tecnologia
+primaria  speaker-bluetooth-con-luz-emergency: variedades -> tecnologia
+primaria  audifonos-bluetooth-cork: variedades -> tecnologia
+primaria  reloj-de-agua-power: variedades -> relojes
+primaria  cargador-inalambrico-con-tablero: variedades -> tecnologia
+primaria  speaker-bluetooth-ringo-bamboo: variedades -> tecnologia
+primaria  puerto-usb-dante-eco: variedades -> tecnologia
+primaria  cargador-inalambrico-warmer: variedades -> tecnologia
+primaria  speaker-bluetooth-alden-eco: variedades -> tecnologia
+primaria  speaker-bluetooth-eco-cork: variedades -> tecnologia
+primaria  speaker-bluetooth-tanner-rpet: variedades -> tecnologia
+primaria  reloj-portaboligrafos-cork: variedades -> relojes
+primaria  cargador-inalambrico-bamboo-square-ii: variedades -> tecnologia
+primaria  botilito-mtalico-lumo-550-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  cargador-inalambrico-con-cables-4-1: variedades -> tecnologia
+primaria  puerto-usb-casiuss-eco: variedades -> tecnologia
+primaria  cargador-inalambrico-collin: variedades -> tecnologia
+primaria  cargador-inalambrico-lavinia: variedades -> tecnologia
+primaria  speaker-bluetooth-zip-cork: variedades -> tecnologia
+primaria  speaker-bluetooth-barack-bamboo: variedades -> tecnologia
+primaria  speaker-bluetooth-cyrus-cork: variedades -> tecnologia
+primaria  taza-en-vidrio-cork-350ml: variedades -> vasos-personalizados
+primaria  cargador-inalambrico-bamboo-ii: variedades -> tecnologia
+primaria  botilito-metalico-plugsy-750-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  reloj-portaboligrafo-crystal-bamboo: variedades -> relojes
+primaria  speaker-bluetooth-artix-bamboo: variedades -> tecnologia
+primaria  cargador-para-carro-eco: variedades -> tecnologia
+primaria  puerto-usb-ruler-bamboo: variedades -> tecnologia
+primaria  set-de-juegos-genium: variedades -> juegos
+primaria  cargador-inalambrico-sabik-eco: variedades -> tecnologia
+primaria  set-de-juego-chessman: variedades -> juegos
+primaria  puerto-usb-orion-eco: variedades -> tecnologia
+primaria  domino-bamboo: variedades -> juegos
+primaria  mouse-inalambrico-zenith-eco: variedades -> tecnologia
+primaria  puerto-usb-bamboo-spirit: variedades -> tecnologia
+primaria  juego-de-raquetas-board-game: variedades -> juegos
+primaria  juego-de-raquetas-wood-beach: variedades -> juegos
+primaria  cargador-inalambrico-nembar: variedades -> tecnologia
+primaria  puerto-usb-massimo-bamboo: variedades -> tecnologia
+primaria  botilito-jormi-rpet-1000-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  mouse-bamboo: variedades -> tecnologia
+primaria  cable-multicargador-eco-fast-65w: variedades -> tecnologia
+primaria  cable-multicargador-lorcan: variedades -> tecnologia
+primaria  botilito-metalico-wizard-600ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  cable-multicargador-bamboo: variedades -> tecnologia
+primaria  bolsa-en-algodon-shopper-290gr: variedades -> bolsas
+primaria  cable-multicargador-3-1-bamboo: variedades -> tecnologia
+primaria  juego-de-madera-win: variedades -> juegos
+primaria  cable-multicargador-gauss-eco: variedades -> tecnologia
+primaria  libreta-albus: variedades -> libretas
+primaria  bolsa-en-denim-reciclado: variedades -> bolsas
+primaria  set-de-portavasos-cork: vasos-personalizados -> hogar
+primaria  botilito-plastico-vita-600ml-rpet: variedades -> tomatodos-y-botilitos-personalizados
+primaria  planeador-semanal-ecologico: variedades -> libretas
+primaria  puerto-usb-hero: variedades -> tecnologia
+primaria  botilito-plastico-griply-rpet-700-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  bolsa-en-algodony-yute: variedades -> bolsas
+primaria  torre-de-madera-skill-2: variedades -> juegos
+primaria  juego-triqui-box-eco: variedades -> juegos
+primaria  libreta-astralis-cork: variedades -> libretas
+primaria  botilito-hoola-rpet-750-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  planeador-semanal-cartoon: variedades -> libretas
+primaria  juego-brain: variedades -> juegos
+primaria  libreta-igor-bamboo: variedades -> libretas
+primaria  botilito-plastico-napper-800-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  bolsa-en-algodon-corcho-135gr: variedades -> bolsas
+primaria  juego-parchis-nuevo: variedades -> juegos
+primaria  juego-cartas-y-domino-eco: variedades -> juegos
+primaria  libreta-vincent: variedades -> libretas
+primaria  bolsa-en-yute-mirka: variedades -> bolsas
+primaria  bolsa-en-algodon-y-yute-nara: variedades -> bolsas
+primaria  sporty-bag-garda-rpet: variedades -> bolsas
+primaria  bolsa-en-algodon-con-fuelle-135gr: variedades -> bolsas
+primaria  libreta-inker-rpet: variedades -> libretas
+primaria  memoria-usb-mini-bamboo-precio-neto: variedades -> memorias-usb
+secundaria memoria-usb-mini-bamboo-precio-neto: + tecnologia
+primaria  bolsa-en-algodon-ecotote: variedades -> bolsas
+primaria  libreta-cork: variedades -> libretas
+primaria  libreta-con-boligrafo-bamboo: variedades -> libretas
+primaria  bolsa-en-algodon-solara-240gr: variedades -> bolsas
+primaria  libreta-eco-milk-70-hojas: variedades -> libretas
+primaria  bolsa-holt-eco-120gr: variedades -> bolsas
+primaria  sporty-bag-eco-yute-280gr: variedades -> bolsas
+primaria  juego-de-dados: variedades -> juegos
+primaria  bolsa-en-algodon-y-yute-nativ-300gr: variedades -> bolsas
+primaria  libreta-valdis-cork: variedades -> libretas
+primaria  memoria-usb-eco-precio-neto: variedades -> memorias-usb
+secundaria memoria-usb-eco-precio-neto: + tecnologia
+primaria  libreta-con-portalapices-produccion-nacional: variedades -> libretas
+secundaria libreta-con-portalapices-produccion-nacional: + produccion-nacional
+primaria  bolsa-en-algodon-basic-300gr: variedades -> bolsas
+primaria  juego-de-letras: variedades -> juegos
+primaria  botilito-plastico-fruit-600-ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  libreta-hakan-eco: variedades -> libretas
+primaria  botilito-plastico-wonder-700ml-produccion-nacional: variedades -> tomatodos-y-botilitos-personalizados
+secundaria botilito-plastico-wonder-700ml-produccion-nacional: + produccion-nacional
+primaria  libreta-con-boligrafo-button-reciclable: variedades -> libretas
+primaria  bolsa-en-algodon-botanik-135gr: variedades -> bolsas
+primaria  sporty-bag-cotton-180gr-ii: variedades -> bolsas
+primaria  botilito-plastico-shams-rpet-600ml: variedades -> tomatodos-y-botilitos-personalizados
+primaria  juego-triqui: variedades -> juegos
+primaria  libreta-century: variedades -> libretas
+primaria  libreta-pollux-eco: variedades -> libretas
+primaria  bolsa-en-algodon-ecopack: variedades -> bolsas
+primaria  bolsa-ecologica-laminada-en-rpet: variedades -> bolsas
+primaria  libreta-con-boligrafo-gulliver-eco: variedades -> libretas
+primaria  libreta-futbol-produccion-nacional: variedades -> libretas
+secundaria libreta-futbol-produccion-nacional: + produccion-nacional
+primaria  bolsa-en-algodon-con-fuelle-100gr: variedades -> bolsas
+primaria  bolsa-en-cambrel-bawel: variedades -> bolsas
+primaria  sporty-bag-en-algodon-zetta-140gr: variedades -> bolsas
+primaria  sporty-bag-en-algodon-zetta-100gr: variedades -> bolsas
+secundaria mug-plastico-morning-320-ml-produccion-nacional: + produccion-nacional
+primaria  set-de-cartas-eco: variedades -> juegos
+primaria  libreta-woody-ecologica-produccion-nacional: variedades -> libretas
+secundaria libreta-woody-ecologica-produccion-nacional: + produccion-nacional
+primaria  bolsa-en-cambrel-reflectiva: variedades -> bolsas
+primaria  bolsa-en-algodon-botanik-100gr: variedades -> bolsas
+primaria  juego-triqui-eco: variedades -> juegos
+primaria  bolsa-metalizada: variedades -> bolsas
+primaria  bolsa-metalizada-mate: variedades -> bolsas
+primaria  bolsa-en-cambrel-franky: variedades -> bolsas
+primaria  bolsa-en-algodon-vera-140gr: variedades -> bolsas
+primaria  bolsa-en-cambrel-winter: variedades -> bolsas
+primaria  bolsa-en-cambrel-nevada: variedades -> bolsas
+primaria  bolsa-en-cambrel-savannah: variedades -> bolsas
+primaria  mini-bolsa-en-algodon-100gr: variedades -> bolsas
+primaria  bolsa-en-cambrel-shopper: variedades -> bolsas
+primaria  bolsa-en-cambrel-queen: variedades -> bolsas
+primaria  bolsa-en-cambrel-market: variedades -> bolsas
+primaria  sporty-bag-en-cambrel-ewok: variedades -> bolsas
+primaria  bolsa-en-algodon-alva-100gr: variedades -> bolsas
+primaria  bolsa-en-cambrel-vest: variedades -> bolsas
+primaria  bolsa-en-cambrel-multiusos-vita-prod-nacional: variedades -> bolsas
+secundaria bolsa-en-cambrel-multiusos-vita-prod-nacional: + produccion-nacional
+primaria  bolsa-en-cambrel-soot: variedades -> bolsas
+primaria  bolsa-en-cambrel-baxter: variedades -> bolsas
+primaria  bolsa-en-cambrel-arcadia: variedades -> bolsas
+primaria  mini-bolsa-en-cambrel: variedades -> bolsas
+primaria  bolsa-en-cambrel-petit: variedades -> bolsas
+primaria  bolsa-en-cambrel-con-fuelle: variedades -> bolsas
+
+Productos por categoría (primaria + secundaria):
+    precio-bomba                             1
+    antiestres                               26
+    antimicrobianos                          7
+    articulos-escritura                      291
+    reflectivos                              12
+    automovil                                1
+    bar-y-vino                               27
+    bicicleta                                9
+    calculadoras                             1
+  x confeccion                               0
+  x deportes                                 0
+  x econature                                0
+    ecologia                                 9
+    golf                                     1
+    gorras                                   2
+    herramientas                             54
+    hogar                                    6
+    iluminacion                              2
+    infantil                                 1
+    juegos                                   16
+    llaveros                                 31
+    maletines                                7
+    master-line                              4
+  x medicos                                  0
+    memorias-usb                             4
+    mugs                                     16
+  x productos-2023                           0
+    oficina                                  5
+    paraguas                                 3
+    cuidado-personal                         3
+    produccion-nacional                      12
+    relojes                                  8
+    tecnologia                               54
+    bolsas                                   54
+    libretas                                 19
+    variedades                               168
+    vasos-personalizados                     2
+    termos-personalizados                    1
+    tomatodos-y-botilitos-personalizados     19

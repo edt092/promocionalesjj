@@ -1,14 +1,13 @@
 import { MetadataRoute } from 'next';
+import { absoluteUrl } from '@/lib/site';
 
-const SITE_URL = 'https://promocionalesjj.co';
-
+// Sin directiva Host (obsoleta, solo Yandex). No se bloquea nada: las URLs con noindex deben poder rastrearse.
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
+    sitemap: absoluteUrl('/sitemap.xml'),
   };
 }

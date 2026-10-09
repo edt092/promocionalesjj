@@ -123,12 +123,12 @@ export default function HeroSection() {
           className="col-span-4 md:col-span-8 lg:col-span-10 mt-6 text-white font-extrabold leading-[0.98] tracking-tight text-[clamp(2.4rem,7vw,6.2rem)]"
           style={{ overflowWrap: 'break-word' }}
         >
-          <span className="block overflow-hidden">
+          <span className="block overflow-hidden pb-[0.14em]">
             <span ref={(el) => { lineRefs.current[0] = el; }} className="block backdrop-blur-sm">
               Merchandising que
             </span>
           </span>
-          <span className="block overflow-hidden">
+          <span className="block overflow-hidden pb-[0.14em]">
             <span ref={(el) => { lineRefs.current[1] = el; }} className="block text-sky-400 backdrop-blur-sm">
               deja marca en Colombia.
             </span>
@@ -157,6 +157,7 @@ export default function HeroSection() {
               href={whatsappHref(WHATSAPP_DEFAULT_MESSAGE)}
               target="_blank"
               rel="noopener noreferrer"
+              data-cta="hero"
               className="inline-flex items-center justify-center h-[58px] px-8 rounded-full bg-danger hover:bg-danger-600 text-white text-[15px] font-semibold transition-colors duration-200 shadow-danger-glow w-full sm:w-auto"
             >
               Cotiza con Nosotros

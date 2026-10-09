@@ -9,6 +9,10 @@ export interface Ciudad {
   h1: string;
   intro: string;
   caracteristicas: string[];
+  /** Categorías del catálogo que se enlazan desde la página (solo slugs publicados con productos). */
+  categoriasDestacadas: string[];
+  /** Secciones editoriales propias de la ciudad. Solo datos verificados: sin sedes, plazos ni clientes supuestos. */
+  secciones?: { titulo: string; parrafos: string[] }[];
 }
 
 export interface Pais {
@@ -37,27 +41,46 @@ export const colombia: Pais = {
       slug: 'bogota',
       nombre: 'Bogotá',
       pais: 'colombia',
-      seoTitle: 'Productos Promocionales Bogotá | Merchandising y Artículos Publicitarios',
+      seoTitle: 'Productos promocionales en Bogotá',
       seoDescription:
-        'Productos promocionales en Bogotá. Artículos publicitarios, merchandising corporativo y regalos empresariales con entrega en toda la capital.',
-      h1: 'Productos Promocionales en Bogotá',
+        'Productos promocionales y merchandising para empresas en Bogotá: bolígrafos, botilitos, bolsas, tecnología y más con tu logo. Cotiza por WhatsApp.',
+      h1: 'Productos promocionales y merchandising en Bogotá',
       intro:
-        'En Bogotá, capital de Colombia, atendemos empresas de todos los sectores con productos promocionales personalizados. Cubrimos el norte, centro, zona empresarial y toda la sabana.',
+        'Promocionales J&J atiende a empresas de Bogotá que necesitan productos promocionales y merchandising con su logo: artículos publicitarios para ferias, campañas, eventos internos y regalos corporativos. Eliges los modelos en el catálogo, nos escribes por WhatsApp y te enviamos la cotización.',
       caracteristicas: [
         'Entrega en toda Bogotá y municipios de la sabana',
         'Atención a empresas del sector público y privado',
         'Producción para ferias en Corferias y centros de eventos',
         'Cotización rápida para pedidos corporativos',
       ],
+      categoriasDestacadas: [
+        'articulos-escritura',
+        'tecnologia',
+        'bolsas',
+        'tomatodos-y-botilitos-personalizados',
+        'vasos-personalizados',
+        'mugs',
+        'libretas',
+        'paraguas',
+      ],
+      secciones: [
+        {
+          titulo: 'Merchandising y artículos publicitarios para empresas bogotanas',
+          parrafos: [
+            'Como proveedor de merchandising trabajamos con áreas de mercadeo, compras y talento humano que buscan artículos publicitarios útiles: bolígrafos y sets de escritura, libretas, botilitos, bolsas reutilizables, accesorios de tecnología y kits de oficina. Cada ficha del catálogo muestra las medidas, el área de marcación y la venta mínima cuando el fabricante las publica.',
+            'Si tu pedido es para una feria, un lanzamiento o un evento interno, indícanos la fecha requerida al cotizar: así confirmamos qué modelos y técnicas de marcación encajan con tu calendario antes de aprobar el pedido.',
+          ],
+        },
+      ],
     },
     {
       slug: 'medellin',
       nombre: 'Medellín',
       pais: 'colombia',
-      seoTitle: 'Productos Promocionales Medellín | Merchandising Empresarial Antioquia',
+      seoTitle: 'Productos publicitarios y merchandising en Medellín',
       seoDescription:
-        'Productos promocionales en Medellín y Antioquia. Artículos publicitarios y merchandising corporativo con envíos a todo el Valle de Aburrá.',
-      h1: 'Productos Promocionales en Medellín',
+        'Productos publicitarios y merchandising con tu logo para empresas de Medellín y el Valle de Aburrá. Explora el catálogo y cotiza por WhatsApp.',
+      h1: 'Productos publicitarios y merchandising en Medellín',
       intro:
         'Medellín, capital de la innovación en Colombia, cuenta con nuestra línea completa de productos promocionales. Atendemos empresas del Valle de Aburrá y todo Antioquia.',
       caracteristicas: [
@@ -65,6 +88,16 @@ export const colombia: Pais = {
         'Atención al sector textil, tecnológico e industrial',
         'Merchandising para ferias y eventos empresariales',
         'Stock disponible para entregas rápidas',
+      ],
+      categoriasDestacadas: ['tecnologia', 'articulos-escritura', 'bolsas', 'libretas', 'tomatodos-y-botilitos-personalizados', 'llaveros'],
+      secciones: [
+        {
+          titulo: 'Productos publicitarios para empresas de Medellín',
+          parrafos: [
+            'Para empresas de Medellín reunimos en un mismo catálogo productos publicitarios de uso diario: accesorios de tecnología como cargadores inalámbricos y speakers, artículos de escritura, libretas, bolsas y botilitos. Todos se personalizan con tu logo y se cotizan directamente por WhatsApp.',
+            'Al cotizar, cuéntanos la cantidad, el lugar de entrega en el Valle de Aburrá y la fecha requerida; con esos datos confirmamos técnica de marcación, disponibilidad y condiciones de envío.',
+          ],
+        },
       ],
     },
     {
@@ -83,6 +116,7 @@ export const colombia: Pais = {
         'Productos para ferias y eventos regionales',
         'Cotización ágil para pedidos al por mayor',
       ],
+      categoriasDestacadas: ['articulos-escritura', 'tecnologia', 'bolsas', 'tomatodos-y-botilitos-personalizados'],
     },
     {
       slug: 'barranquilla',
@@ -100,6 +134,7 @@ export const colombia: Pais = {
         'Atención a empresas portuarias y comerciales',
         'Merchandising para el Carnaval y eventos regionales',
       ],
+      categoriasDestacadas: ['tomatodos-y-botilitos-personalizados', 'bolsas', 'paraguas', 'articulos-escritura'],
     },
     {
       slug: 'bucaramanga',
@@ -117,6 +152,7 @@ export const colombia: Pais = {
         'Merchandising para ferias y eventos regionales',
         'Cotización rápida para empresas locales',
       ],
+      categoriasDestacadas: ['articulos-escritura', 'tecnologia', 'libretas', 'bolsas'],
     },
   ],
 };
