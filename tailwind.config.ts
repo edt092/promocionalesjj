@@ -44,6 +44,7 @@ const config: Config = {
           400: '#FF6161',
           500: '#FF2D2D',
           600: '#E01414',
+          700: '#BD0F0F',
         },
         ink: {
           DEFAULT: '#1E2229',
@@ -71,7 +72,7 @@ const config: Config = {
       backgroundImage: {
         'gradiente-primario': 'linear-gradient(135deg, #0A1A2F 0%, #1565FF 100%)',
         'gradiente-secundario': 'linear-gradient(90deg, #1565FF 0%, #00BFFF 100%)',
-        'gradiente-acento': 'linear-gradient(135deg, #1E2229 0%, #FF2D2D 100%)',
+        'gradiente-acento': 'linear-gradient(135deg, #1E2229 0%, #E01414 100%)',
       },
       perspective: {
         '1000': '1000px',

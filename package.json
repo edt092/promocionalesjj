@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node --experimental-strip-types --no-warnings --test \"tests/**/*.test.ts\"",
+    "seo:check": "node scripts/seo-check.mjs out --strict"
   },
   "dependencies": {
     "gsap": "^3.13.0",

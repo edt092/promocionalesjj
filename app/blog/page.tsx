@@ -46,7 +46,7 @@ export default function BlogPage() {
                   {post.titulo}
                 </h2>
                 <p className="mt-2 text-sm text-slate-500 line-clamp-3">{post.extracto}</p>
-                <span className="mt-4 text-xs text-slate-400">
+                <span className="mt-4 text-xs text-slate-600">
                   <time dateTime={post.fecha_publicacion}>{formatDate(post.fecha_publicacion)}</time> · {readingTime(post.contenido_html)}
                 </span>
               </div>

@@ -12,7 +12,7 @@ export default function CTABanner() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white">
           Lleva tu marca a cada rincón de Colombia
         </h2>
-        <p className="mt-4 text-white/80 max-w-xl mx-auto">
+        <p className="mt-4 text-white max-w-xl mx-auto">
           Cotiza tu próximo pedido de productos promocionales con atención personalizada y entrega
           en Bogotá, Medellín, Cali, Barranquilla, Bucaramanga y el resto del país.
         </p>
@@ -22,9 +22,10 @@ export default function CTABanner() {
               href={whatsappHref(WHATSAPP_DEFAULT_MESSAGE)}
               target="_blank"
               rel="noopener noreferrer"
+              data-cta="banner"
               className="inline-flex items-center gap-2 h-14 px-9 rounded-full bg-white text-danger-600 font-bold text-base transition-transform duration-200 hover:scale-[1.03]"
             >
-              Cotiza con Nosotros
+              Cotizar por WhatsApp
               <span aria-hidden="true">→</span>
             </a>
           </MagneticButton>

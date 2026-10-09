@@ -1,0 +1,765 @@
+{
+  "responsive": {
+    "inicio@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@320": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@375": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@768": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@834": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@1194": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@1280": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@1440": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "inicio@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "tienda@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "producto-ballpop@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "categoria-gorras@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "promociones@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "contacto@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    },
+    "cotizacion@1920": {
+      "overflowPx": 0,
+      "offenders": [],
+      "navVisible": true,
+      "targetsBelow24": [],
+      "coveredByFab": []
+    }
+  },
+  "contraste": {
+    "inicio@375": [],
+    "tienda@375": [],
+    "producto-ballpop@375": [],
+    "categoria-gorras@375": [],
+    "promociones@375": [],
+    "contacto@375": [],
+    "cotizacion@375": [],
+    "inicio@1280": [],
+    "tienda@1280": [],
+    "producto-ballpop@1280": [],
+    "categoria-gorras@1280": [],
+    "promociones@1280": [],
+    "contacto@1280": [],
+    "cotizacion@1280": []
+  },
+  "flujos": {
+    "A: búsqueda por nombre": [
+      {
+        "ok": true,
+        "detalle": "1 producto encontrado · mostrando 1"
+      }
+    ],
+    "A: búsqueda en la URL": [
+      {
+        "ok": true,
+        "detalle": "http://localhost:4190/tienda/?q=ballpop"
+      }
+    ],
+    "A: búsqueda por SKU": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "A: sinónimo esfero→bolígrafo": [
+      {
+        "ok": true,
+        "detalle": "264 productos encontrados · mostrando 24"
+      }
+    ],
+    "A: filtro material activo": [
+      {
+        "ok": true,
+        "detalle": "http://localhost:4190/tienda/?q=esfero&material=metal"
+      }
+    ],
+    "A: filtros conservados al volver": [
+      {
+        "ok": true,
+        "detalle": "http://localhost:4190/tienda/?q=esfero&material=metal"
+      }
+    ],
+    "A: posición conservada al volver": [
+      {
+        "ok": true,
+        "detalle": "1400 -> 1400"
+      }
+    ],
+    "A: ficha muestra la regla de cantidad": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "A: error de cantidad explica la regla": [
+      {
+        "ok": true,
+        "detalle": "Este producto se vende en múltiplos de 50 unidades por color: por ejemplo 50, 100, 150 o más.\n\nUsar:\n100\n150"
+      }
+    ],
+    "A: no se redondea automáticamente": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "A: sugerencia aplicada por decisión del usuario": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "A: resumen incompleto muestra errores en vez de abrir": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "A: mensaje con producto, cantidad, ciudad y fecha": [
+      {
+        "ok": true,
+        "detalle": "Hola, quiero cotizar:\n• Bolígrafo Ballpop (JJ-000001): 100 unidades — 50 azules y 50 rojos\nCiudad de entrega: Bogotá.\nFecha requerida: 20/11/2026.\nPor favor confirmen disponibilidad, valor con marcación y opciones de entrega."
+      }
+    ],
+    "A: enlace de WhatsApp lleva el mismo mensaje codificado": [
+      {
+        "ok": true,
+        "detalle": "https://wa.me/573155595134?text=Hola%2C%20quiero%20cotizar%3A%0A%E2%80%A2%20Bol%"
+      }
+    ],
+    "A: tras abrir no se afirma 'solicitud recibida'": [
+      {
+        "ok": true,
+        "detalle": "Abrimos WhatsApp con tu resumen en una pestaña nueva. Revisa el mensaje y envíalo. Si no se abrió, usa “Copiar mensaje”."
+      }
+    ],
+    "A: copiar mensaje (alternativa si WhatsApp no abre)": [
+      {
+        "ok": true,
+        "detalle": "Mensaje copiado. Pégalo en WhatsApp al +57 315 5595134."
+      }
+    ],
+    "A: borrador conservado al regresar": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "B: lista vacía tras borrar": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "B: datos borrados del navegador": [
+      {
+        "ok": true,
+        "detalle": "None"
+      }
+    ],
+    "B: mensaje de asesoría con objetivo y sin fecha": [
+      {
+        "ok": true,
+        "detalle": "Hola, necesito asesoría para elegir productos promocionales.\nCiudad de entrega: Medellín.\nFecha requerida: sin fecha definida.\nPersonalización: necesito asesoría.\nUso o evento: regalos para 200 asistentes de una feria.\nPor favor confirmen disponibilidad, valor con marcación y opciones de entrega."
+      }
+    ],
+    "B: resumen listo sin productos": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "U: estado sin resultados con salida": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "U: limpiar vuelve al listado": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "U: error de carga visible y catálogo sigue accesible": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "U: reintento recupera la búsqueda conservando el texto": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "K: primer Tab = saltar al contenido": [
+      {
+        "ok": true,
+        "detalle": "Saltar al contenido"
+      }
+    ],
+    "K: el salto mueve el foco a main": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "K: foco dentro del diálogo al abrir": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "K: Tab queda atrapado en el diálogo": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "K: copy ilustrativo en el diálogo": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "K: Escape cierra y devuelve el foco al disparador": [
+      {
+        "ok": true,
+        "detalle": "Ver ejemplo de marcación en Morral Backpack Nordic"
+      }
+    ],
+    "T: eventos sin datos sensibles ni texto libre": [
+      {
+        "ok": true,
+        "detalle": ""
+      }
+    ],
+    "T: evento search_used emitido": [
+      {
+        "ok": true,
+        "detalle": "product_viewed,quote_item_added,quote_start,quote_summary_ready,search_used,whatsapp_open_clicked"
+      }
+    ],
+    "T: evento product_viewed emitido": [
+      {
+        "ok": true,
+        "detalle": "product_viewed,quote_item_added,quote_start,quote_summary_ready,search_used,whatsapp_open_clicked"
+      }
+    ],
+    "T: evento quote_item_added emitido": [
+      {
+        "ok": true,
+        "detalle": "product_viewed,quote_item_added,quote_start,quote_summary_ready,search_used,whatsapp_open_clicked"
+      }
+    ],
+    "T: evento quote_start emitido": [
+      {
+        "ok": true,
+        "detalle": "product_viewed,quote_item_added,quote_start,quote_summary_ready,search_used,whatsapp_open_clicked"
+      }
+    ],
+    "T: evento quote_summary_ready emitido": [
+      {
+        "ok": true,
+        "detalle": "product_viewed,quote_item_added,quote_start,quote_summary_ready,search_used,whatsapp_open_clicked"
+      }
+    ],
+    "T: evento whatsapp_open_clicked emitido": [
+      {
+        "ok": true,
+        "detalle": "product_viewed,quote_item_added,quote_start,quote_summary_ready,search_used,whatsapp_open_clicked"
+      }
+    ]
+  },
+  "teclado": {
+    "primer_tab": "Saltar al contenido"
+  },
+  "analitica": {
+    "eventos": [
+      {
+        "event": "search_used",
+        "page_path": "/tienda/",
+        "results": 98,
+        "category": "todas",
+        "has_query": true
+      },
+      {
+        "event": "product_viewed",
+        "page_path": "/tienda/",
+        "product_id": "JJ-000008",
+        "category_id": "articulos-escritura"
+      },
+      {
+        "event": "product_viewed",
+        "page_path": "/tienda/boligrafo-ballpop/",
+        "product_id": "JJ-000001",
+        "category_id": "antiestres"
+      },
+      {
+        "event": "quote_item_added",
+        "page_path": "/tienda/boligrafo-ballpop/",
+        "product_id": "JJ-000001",
+        "category_id": "antiestres"
+      },
+      {
+        "event": "quote_start",
+        "page_path": "/cotizacion/",
+        "form": "cotizacion",
+        "item_count": 1
+      },
+      {
+        "event": "quote_summary_ready",
+        "page_path": "/cotizacion/",
+        "item_count": 1,
+        "has_date": true,
+        "needs_advice": false,
+        "has_technique": false
+      },
+      {
+        "event": "whatsapp_open_clicked",
+        "page_path": "/cotizacion/",
+        "cta": "cotizacion_resumen",
+        "product_id": null
+      },
+      {
+        "event": "quote_summary_ready",
+        "page_path": "/cotizacion/",
+        "item_count": 1,
+        "has_date": true,
+        "needs_advice": false,
+        "has_technique": false
+      },
+      {
+        "event": "quote_start",
+        "page_path": "/cotizacion/",
+        "form": "cotizacion",
+        "item_count": 0
+      }
+    ],
+    "tipos": [
+      "product_viewed",
+      "quote_item_added",
+      "quote_start",
+      "quote_summary_ready",
+      "search_used",
+      "whatsapp_open_clicked"
+    ]
+  }
+}

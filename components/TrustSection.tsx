@@ -3,11 +3,11 @@ import ScrollRevealGroup from './ScrollRevealGroup';
 const ITEMS = [
   {
     title: 'Personalización con tu logo',
-    description: 'Marcación por serigrafía, grabado láser, bordado o tampografía según el material.',
+    description: 'Marcación por tampografía, láser, serigrafía u otras técnicas según el material de cada producto.',
   },
   {
-    title: 'Precio mayorista',
-    description: 'Descuentos por volumen para pedidos corporativos y compras al por mayor.',
+    title: 'Cotización por volumen',
+    description: 'El valor depende del producto, la cantidad y la técnica de marcación; te lo confirmamos en la cotización.',
   },
   {
     title: 'Cobertura nacional',
@@ -28,7 +28,7 @@ export default function TrustSection() {
             <div key={item.title} className="rounded-2xl bg-white p-6 border border-slate-100">
               <span aria-hidden="true" className="block h-2 w-8 rounded-full bg-gradiente-secundario mb-4" />
               <h3 className="text-base font-semibold text-ink-700">{item.title}</h3>
-              <p className="mt-2 text-sm text-slate-500 leading-relaxed">{item.description}</p>
+              <p className="mt-2 text-sm text-slate-700 leading-relaxed">{item.description}</p>
             </div>
           ))}
         </ScrollRevealGroup>

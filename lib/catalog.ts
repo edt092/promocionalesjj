@@ -1,5 +1,6 @@
 import productsData from '@/data/products.json';
 import categoriesData from '@/data/categories.json';
+import { parseQuantityRule, type QuantityRule } from './quote-rules';
 
 /**
  * Capa de catálogo: todo lo que las rutas muestran o declaran sobre un producto sale de aquí y se
@@ -39,6 +40,10 @@ export interface CatalogProduct {
   metaTitle: string;
   metaDescription: string;
   referenciaProveedor: string;
+  /** Regla de cantidad publicada por el proveedor para este producto; ausente si no existe. */
+  quantityRule?: QuantityRule;
+  /** Claves de material detectadas en nombre y descripción (ver MATERIAL_LABELS). */
+  materiales: string[];
 }
 
 export interface CatalogCategory {
@@ -293,6 +298,8 @@ function enrich(p: RawProduct): CatalogProduct {
     metaTitle: `${displayName} con logo personalizado`,
     metaDescription,
     referenciaProveedor: p.referencia_proveedor,
+    quantityRule: parseQuantityRule(p.descripcion_corta || ''),
+    materiales: [],
   };
 }
 
@@ -370,12 +377,20 @@ export function pagePath(basePath: string, page: number) {
 // ---------------------------------------------------------------------------------------------
 // Relacionados por atributos compatibles (SEO-18), no por orden de archivo.
 
+export const MATERIAL_LABELS: Record<string, string> = {
+  bambu: 'bambú', corcho: 'corcho', acero: 'acero inoxidable', algodon: 'algodón', rpet: 'plástico reciclado RPET',
+  trigo: 'fibra de trigo', madera: 'madera', silicona: 'silicona', cuero: 'cuero', yute: 'yute', cambrel: 'cambrel',
+  metal: 'metal', plastic: 'plástico', vidrio: 'vidrio', ceramica: 'cerámica', tritan: 'Tritán',
+};
+
 const MATERIALS = ['bambu', 'corcho', 'acero', 'algodon', 'rpet', 'trigo', 'madera', 'silicona', 'cuero', 'yute', 'cambrel', 'metal', 'plastic', 'vidrio', 'ceramica', 'tritan'];
 
 function materialsOf(p: CatalogProduct): Set<string> {
   const text = strip(`${p.nombre} ${p.descripcion}`);
   return new Set(MATERIALS.filter((m) => text.includes(m)));
 }
+// Se calcula aquí (no en enrich) porque MATERIALS se declara después de construir `products`.
+for (const p of products) p.materiales = Array.from(materialsOf(p));
 
 export function getRelatedProducts(product: CatalogProduct, limit = 8): CatalogProduct[] {
   const mats = materialsOf(product);
@@ -410,11 +425,6 @@ export function categoryFacts(slug: string) {
     if (p.specs.some((s) => s.label === 'Medidas')) conMedidas++;
     if (p.specs.some((s) => s.label === 'Venta mínima')) conMinima++;
   }
-  const MATERIAL_LABELS: Record<string, string> = {
-    bambu: 'bambú', corcho: 'corcho', acero: 'acero inoxidable', algodon: 'algodón', rpet: 'plástico reciclado RPET',
-    trigo: 'fibra de trigo', madera: 'madera', silicona: 'silicona', cuero: 'cuero', yute: 'yute', cambrel: 'cambrel',
-    metal: 'metal', plastic: 'plástico', vidrio: 'vidrio', ceramica: 'cerámica', tritan: 'Tritán',
-  };
   const sorted = (m: Map<string, number>) => Array.from(m.entries()).sort((a, b) => b[1] - a[1]);
   return {
     total: items.length,

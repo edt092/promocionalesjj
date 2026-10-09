@@ -11,8 +11,9 @@ export default function AnalyticsListener() {
   useEffect(() => {
     function onClick(event: MouseEvent) {
       const link = (event.target as Element | null)?.closest?.('a[href^="https://wa.me/"]');
-      if (!link) return;
-      track('whatsapp_click', { cta: link.getAttribute('data-cta') ?? 'sin_etiqueta' });
+      // Resumen incompleto: el enlace no abre WhatsApp (muestra los errores), no cuenta como apertura.
+      if (!link || link.getAttribute('data-ready') === 'false') return;
+      track('whatsapp_open_clicked', { cta: link.getAttribute('data-cta') ?? 'sin_etiqueta', product_id: link.getAttribute('data-product') ?? undefined });
     }
     document.addEventListener('click', onClick, { capture: true });
     return () => document.removeEventListener('click', onClick, { capture: true });

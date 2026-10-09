@@ -22,7 +22,7 @@ export default function Pagination({ basePath, page, total }: { basePath: string
       )}
       {visible.map((n, i) => (
         <span key={n} className="flex items-center gap-2">
-          {i > 0 && n - visible[i - 1] > 1 && <span aria-hidden="true" className="text-slate-400">…</span>}
+          {i > 0 && n - visible[i - 1] > 1 && <span aria-hidden="true" className="text-slate-600">…</span>}
           {n === page ? (
             <span aria-current="page" className={`${base} bg-ink-700 text-white`}>
               {n}

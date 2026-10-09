@@ -64,7 +64,7 @@ Comparar periodos **iguales de 28 días** con tipo Web, país Colombia y los mis
 - **Marca frente a no marca:** usar una clasificación revisada a mano. «jj» o «j&j» sueltos son ambiguos.
 - **Consultas prioritarias:** Bogotá, vasos, Medellín y paraguas/sombrillas, cada una con su página (ver [mapa-intenciones.md](mapa-intenciones.md)).
 - **Indexación:** número de productos y categorías indexados, canonical seleccionada por Google (debe ser la de www) y estado de las páginas paginadas.
-- **Negocio:** clics en WhatsApp (`whatsapp_click`, una vez exista GA4), solicitudes válidas y leads cualificados conciliados con ventas.
+- **Negocio:** clics en WhatsApp (`whatsapp_open_clicked` (antes `whatsapp_click`, renombrado en la entrega UX), una vez exista GA4), solicitudes válidas y leads cualificados conciliados con ventas.
 - **Contexto:** registrar la fecha de publicación y la estacionalidad de fin de año.
 
 | Meta operativa verificable | Objetivo |

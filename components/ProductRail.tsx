@@ -1,7 +1,7 @@
 import ProductCard, { ProductCardData } from './ProductCard';
 import ScrollRevealGroup from './ScrollRevealGroup';
 
-const TRUST_SIGNALS = ['Personalización con tu logo', 'Precio mayorista', 'Envíos a toda Colombia'];
+const TRUST_SIGNALS = ['Personalización con tu logo', 'Cotización por volumen', 'Envíos a toda Colombia'];
 
 /**
  * "Carrusel/rail de producto con señales de confianza" — patrón del blueprint
@@ -23,7 +23,7 @@ export default function ProductRail({
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-ink-700">{title}</h2>
-          <ul className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-600">
             {TRUST_SIGNALS.map((signal) => (
               <li key={signal} className="flex items-center gap-1.5">
                 <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-sky-500" />
