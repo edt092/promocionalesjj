@@ -74,7 +74,7 @@ export default function CategoryView({ category, page }: { category: CatalogCate
               target="_blank"
               rel="noopener noreferrer"
               data-cta="categoria"
-              className="mt-5 inline-flex min-h-11 items-center rounded-full bg-danger px-6 text-sm font-semibold text-white hover:bg-danger-600 transition-colors"
+              className="mt-5 inline-flex min-h-11 items-center rounded-full bg-danger-600 px-6 text-sm font-semibold text-white hover:bg-danger-600 transition-colors"
             >
               Cotizar {category.name.toLowerCase()} por WhatsApp
             </a>

@@ -2,7 +2,7 @@ const FAQS = [
   {
     question: '¿Cuál es el pedido mínimo para personalizar productos con mi logo?',
     answer:
-      'Depende del producto y la técnica de marcación. La mayoría de artículos manejan mínimos accesibles para pymes; cotiza por WhatsApp indicando cantidad y producto para una respuesta exacta.',
+      'Depende de cada producto. Cuando el proveedor publica una regla (por ejemplo, múltiplos de 50 unidades por color), la ves en la ficha; si no aparece, te la confirmamos al cotizar.',
   },
   {
     question: '¿A qué ciudades de Colombia hacen entregas?',
@@ -12,12 +12,12 @@ const FAQS = [
   {
     question: '¿Cuánto tarda la producción de un pedido personalizado?',
     answer:
-      'Los tiempos varían según el producto y la técnica de marcación (serigrafía, grabado láser, bordado). Te confirmamos el tiempo exacto al cotizar.',
+      'Los tiempos varían según el producto, la cantidad y la técnica de marcación. Indica tu fecha requerida al cotizar y te confirmamos si es viable.',
   },
   {
-    question: '¿Manejan precios mayoristas para empresas?',
+    question: '¿Cómo se calcula el valor de un pedido?',
     answer:
-      'Sí, ofrecemos descuentos por volumen para pedidos corporativos. Escríbenos por WhatsApp con la cantidad que necesitas para una cotización con precio mayorista.',
+      'Depende del producto, la cantidad, la técnica de marcación y la entrega. Prepara tu cotización con esos datos y te enviamos el valor y las condiciones por WhatsApp.',
   },
 ];
 
@@ -35,11 +35,11 @@ export default function FAQSection() {
             <details key={faq.question} className="group py-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-ink-700 marker:content-none">
                 {faq.question}
-                <span aria-hidden="true" className="flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-45">
+                <span aria-hidden="true" className="flex-shrink-0 text-slate-600 transition-transform duration-200 group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="mt-3 text-sm leading-relaxed text-slate-500">{faq.answer}</p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-700">{faq.answer}</p>
             </details>
           ))}
         </div>

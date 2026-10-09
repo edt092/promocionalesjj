@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import QuoteForm from '@/components/QuoteForm';
 import QuoteSteps from '@/components/QuoteSteps';
 import { colombia } from '@/data/geo-data';
 import { WHATSAPP_DISPLAY, WHATSAPP_DEFAULT_MESSAGE, whatsappHref } from '@/lib/contact';
@@ -25,8 +24,8 @@ export default function ContactoPage() {
         <Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Contacto' }]} />
         <h1 className="mt-4 text-3xl sm:text-4xl font-bold text-ink-700">Contacto y cotización</h1>
         <p className="mt-4 max-w-2xl text-slate-600 leading-relaxed">
-          Atendemos las cotizaciones de productos promocionales por WhatsApp. Completa los datos del pedido y abriremos
-          la conversación con el mensaje listo, o escríbenos directamente.
+          Atendemos las cotizaciones de productos promocionales por WhatsApp. Prepara tu pedido con la cotización guiada o
+          escríbenos directamente.
         </p>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-5 gap-10">
@@ -34,9 +33,16 @@ export default function ContactoPage() {
             <h2 id="form-cotizacion" className="text-xl font-semibold text-ink-700">
               Solicitar cotización
             </h2>
-            <div className="mt-5">
-              <QuoteForm />
-            </div>
+            <p className="mt-3 text-slate-700 leading-relaxed">
+              Prepara un mensaje con productos, cantidades, ciudad y fecha requerida. Si aún no sabes qué elegir, puedes pedir
+              asesoría y contarnos para qué es el pedido.
+            </p>
+            <a
+              href="/cotizacion/"
+              className="mt-5 inline-flex min-h-12 items-center rounded-full bg-danger-600 px-7 text-sm font-semibold text-white hover:bg-danger-700 transition-colors"
+            >
+              Preparar cotización
+            </a>
           </section>
 
           <aside className="lg:col-span-2 space-y-6">
@@ -48,7 +54,7 @@ export default function ContactoPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-cta="contacto"
-                className="mt-4 inline-flex min-h-11 items-center rounded-full bg-[#25D366] px-6 text-sm font-semibold text-white hover:bg-[#20BA5A] transition-colors"
+                className="mt-4 inline-flex min-h-11 items-center rounded-full bg-[#0F7A3E] px-6 text-sm font-semibold text-white hover:bg-[#0B6633] transition-colors"
               >
                 Abrir chat
               </a>

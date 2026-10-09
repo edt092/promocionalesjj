@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/Breadcrumbs';
+import CatalogSearch from '@/components/CatalogSearch';
 import CategoryLinks from '@/components/CategoryLinks';
 import Pagination from '@/components/Pagination';
 import ProductGrid from '@/components/ProductGrid';
@@ -33,14 +34,18 @@ export default function CatalogPage({ page }: { page: number }) {
 
         {page === 1 && (
           <div className="mt-8">
-            <CategoryLinks />
+            <CategoryLinks compact />
           </div>
         )}
 
-        <div className="mt-10">
-          <ProductGrid products={items} />
+        <div className="mt-8">
+          <CatalogSearch totalProducts={products.length}>
+            <div className="mt-6">
+              <ProductGrid products={items} />
+            </div>
+            <Pagination basePath="/tienda/" page={page} total={tiendaTotalPages} />
+          </CatalogSearch>
         </div>
-        <Pagination basePath="/tienda/" page={page} total={tiendaTotalPages} />
       </div>
     </div>
   );

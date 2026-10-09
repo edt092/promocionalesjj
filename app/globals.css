@@ -25,6 +25,22 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* El foco y los anclajes no quedan ocultos tras la cabecera fija (WCAG 2.4.11). */
+  scroll-padding-top: 6rem;
+  scroll-padding-bottom: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Foco visible y consistente en todo el sitio (WCAG 2.4.7). */
+:focus-visible {
+  outline: 3px solid #1565ff;
+  outline-offset: 2px;
+  border-radius: 6px;
 }
 
 body {

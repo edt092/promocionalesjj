@@ -41,7 +41,7 @@
 
 `lib/analytics.ts` y `components/AnalyticsListener.tsx`:
 
-- **Eventos implementados:** `whatsapp_click` (un único listener delegado, con `data-cta` para saber la ubicación) y `quote_start`.
+- **Eventos implementados:** `whatsapp_open_clicked` (antes `whatsapp_click`, renombrado en la entrega UX) (un único listener delegado, con `data-cta` para saber la ubicación) y `quote_start`.
 - **Eventos no implementados:** `quote_submit_success` y `quote_submit_error`, porque no hay backend; el formulario abre WhatsApp y no «envía».
 - **Sin ID de GA4:** los eventos solo salen si existen `gtag` o `dataLayer`.
 - **Sin PII:** se envían el tipo de CTA y la ruta, nada más.

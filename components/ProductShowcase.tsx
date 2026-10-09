@@ -75,6 +75,8 @@ export default function ProductShowcase() {
   const stageRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const active = SHOWCASE_PRODUCTS[activeIndex];
 
   // Spotlight que sigue al cursor por toda la sección (header.md: "focos de luz que siguen al
@@ -144,13 +146,37 @@ export default function ProductShowcase() {
 
   const closeModal = useCallback(() => setModalOpen(false), []);
 
+  // Diálogo accesible: foco dentro al abrir, Tab atrapado, Escape cierra y el foco vuelve al disparador.
   useEffect(() => {
     if (!modalOpen) return;
+    const dialog = dialogRef.current;
+    const focusables = () =>
+      Array.from(dialog?.querySelectorAll<HTMLElement>('a[href], button:not([disabled])') ?? []).filter((el) => el.offsetParent !== null && el.tabIndex >= 0);
+    focusables()[0]?.focus();
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === 'Escape') closeModal();
+      if (event.key === 'Escape') {
+        closeModal();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      const list = focusables();
+      if (list.length === 0) return;
+      const first = list[0];
+      const last = list[list.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
+    const trigger = triggerRef.current;
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      trigger?.focus();
+    };
   }, [modalOpen, closeModal]);
 
   return (
@@ -176,17 +202,18 @@ export default function ProductShowcase() {
             Tus productos insignia, de cerca.
           </h2>
           <p className="mt-4 text-white/70 text-[15px] leading-relaxed">
-            Explora el catálogo en detalle: mueve el cursor sobre la pieza activa y cambia de producto en el dock inferior.
+            Elige un producto en la barra inferior para verlo de cerca y abre el ejemplo de marcación.
           </p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <TiltCard className="w-full">
             <button
+              ref={triggerRef}
               type="button"
               onClick={() => setModalOpen(true)}
               className="group relative block w-full aspect-square rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-sm overflow-hidden text-left"
-              aria-label={`Ver personalización de ${active.nombre}`}
+              aria-label={`Ver ejemplo de marcación en ${active.nombre}`}
             >
               <div
                 aria-hidden="true"
@@ -205,7 +232,7 @@ export default function ProductShowcase() {
                 />
               </div>
               <span className="absolute bottom-4 right-4 inline-flex items-center gap-1.5 rounded-full bg-white/10 border border-white/15 px-3 py-1.5 text-[12px] text-white/90 backdrop-blur-sm transition-colors duration-150 group-hover:bg-white/20">
-                Personalizar con tu logo →
+                Ver ejemplo de marcación →
               </span>
             </button>
           </TiltCard>
@@ -216,7 +243,7 @@ export default function ProductShowcase() {
             </span>
             <h3 className="mt-4 text-white font-bold text-[clamp(1.4rem,2.2vw,2rem)] leading-tight">{active.nombre}</h3>
             <p className="mt-3 text-white/70 text-[15px] leading-relaxed max-w-[46ch]">{active.descripcion_corta}</p>
-            <p className="mt-2 text-white/40 text-[13px]">SKU {active.sku}</p>
+            <p className="mt-2 text-white/70 text-[13px]">SKU {active.sku}</p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <MagneticButton>
@@ -234,7 +261,7 @@ export default function ProductShowcase() {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cta="vitrina"
-                  className="inline-flex items-center justify-center h-[52px] px-7 rounded-full bg-danger hover:bg-danger-600 text-white text-[14px] font-semibold transition-colors duration-150 w-full sm:w-auto"
+                  className="inline-flex items-center justify-center h-[52px] px-7 rounded-full bg-danger-600 hover:bg-danger-700 text-white text-[14px] font-semibold transition-colors duration-150 w-full sm:w-auto"
                 >
                   Cotiza este producto
                 </a>
@@ -275,15 +302,18 @@ export default function ProductShowcase() {
 
       {modalOpen && (
         <div
+          ref={dialogRef}
           role="dialog"
           aria-modal="true"
-          aria-label={`Personalización de ${active.nombre}`}
+          aria-label={`Ejemplo de marcación: ${active.nombre}`}
           className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8"
         >
+          {/* Fondo: cierra con clic, pero no es un control de teclado (evita dos "Cerrar" en el orden de foco). */}
           <button
             type="button"
             onClick={closeModal}
-            aria-label="Cerrar"
+            tabIndex={-1}
+            aria-hidden="true"
             className="absolute inset-0 bg-navy-950/80 backdrop-blur-sm animate-fadeIn"
           />
           <div className="relative w-full max-w-lg rounded-3xl bg-navy-900 border border-white/10 p-6 sm:p-8 animate-fadeIn">
@@ -298,19 +328,19 @@ export default function ProductShowcase() {
             <div className="relative w-full aspect-square rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden">
               <Image src={active.imagen_url} alt={active.nombre} fill sizes="(min-width: 640px) 512px, 90vw" className="object-contain p-10" />
               <div className="absolute bottom-4 right-4 w-14 h-14 rounded-full bg-white shadow-lift p-2 flex items-center justify-center">
-                <Image src="/promocionalesjj_icon.png" alt="Tu logo aquí" width={40} height={40} className="object-contain" />
+                <Image src="/promocionalesjj_icon.png" alt="Logo de ejemplo" width={40} height={40} className="object-contain" />
               </div>
             </div>
             <h3 className="mt-5 text-white font-bold text-lg">{active.nombre}</h3>
-            <p className="mt-1 text-white/60 text-sm">Vista previa de cómo se vería tu logo sobre este producto.</p>
+            <p className="mt-1 text-white/60 text-sm">Ejemplo ilustrativo de marcación con un logo de muestra. El diseño final con tu logo se confirma antes de producir.</p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
                 href={whatsappHref(`Hola, quiero cotizar el producto "${active.nombre}" personalizado con mi logo.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-[48px] px-6 rounded-full bg-danger hover:bg-danger-600 text-white text-[14px] font-semibold transition-colors duration-150 w-full sm:w-auto"
+                className="inline-flex items-center justify-center h-[48px] px-6 rounded-full bg-danger-600 hover:bg-danger-700 text-white text-[14px] font-semibold transition-colors duration-150 w-full sm:w-auto"
               >
-                Cotiza con tu logo
+                Cotizar por WhatsApp
               </a>
             </div>
           </div>

@@ -3,7 +3,7 @@
     "id": "precio-bomba",
     "slug": "precio-bomba",
     "name": "Precio Bomba",
-    "description": "Productos promocionales con los mejores precios del mercado.",
+    "description": "Referencias marcadas por el proveedor como precio especial. Condiciones y vigencia se confirman al cotizar.",
     "providerUrl": "https://www.catalogospromocionales.com/promocionales/precio-bomba.html",
     "keywords": [
       "ofertas",

@@ -4,10 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ProductRail from '@/components/ProductRail';
-import MagneticButton from '@/components/MagneticButton';
+import ProductActions from '@/components/ProductActions';
 import { toCardData } from '@/components/ProductCard';
 import { getCategory, getProduct, getRelatedProducts, products } from '@/lib/catalog';
-import { whatsappHref } from '@/lib/contact';
 import { jsonLdString, pageMetadata } from '@/lib/seo';
 import { absoluteUrl } from '@/lib/site';
 
@@ -50,7 +49,9 @@ export default function ProductoPage({ params }: { params: { slug: string } }) {
     ...(category ? { category: category.name } : {}),
   };
 
-  const quoteMessage = `Hola, quiero cotizar "${product.displayName}" (SKU ${product.sku}) con el logo de mi empresa. Cantidad: __ unidades. Ciudad de entrega: __. Fecha requerida: __.`;
+  const rule = product.quantityRule;
+  // La venta mínima se muestra en su propio bloque (H03); el resto de atributos va en la tabla.
+  const attributes = product.specs.filter((spec) => spec.label !== 'Venta mínima');
 
   return (
     <div className="pt-24 pb-20">
@@ -77,7 +78,7 @@ export default function ProductoPage({ params }: { params: { slug: string } }) {
                 priority
               />
             ) : (
-              <div className="flex h-full w-full flex-col items-center justify-center gap-2 p-8 text-center text-slate-500">
+              <div className="flex h-full w-full flex-col items-center justify-center gap-2 p-8 text-center text-slate-600">
                 <span className="text-sm font-semibold">Fotografía no disponible</span>
                 <span className="text-xs">Te enviamos imágenes del modelo al cotizar.</span>
               </div>
@@ -94,42 +95,56 @@ export default function ProductoPage({ params }: { params: { slug: string } }) {
               </Link>
             )}
             <h1 className="mt-2 text-3xl sm:text-4xl font-bold text-ink-700">{product.displayName}</h1>
-            {product.descripcion && <p className="mt-4 text-slate-600 leading-relaxed">{product.descripcion}</p>}
+            <p className="mt-2 text-sm text-slate-600">Referencia {product.sku}</p>
+            {product.descripcion && <p className="mt-4 text-slate-700 leading-relaxed">{product.descripcion}</p>}
+
+            <section aria-labelledby="cantidad-producto" className="mt-6 rounded-2xl border border-slate-200 p-4">
+              <h2 id="cantidad-producto" className="text-sm font-semibold text-ink-700">
+                Cantidad
+              </h2>
+              <p className="mt-1 text-sm text-slate-700">
+                {rule
+                  ? `Pedido en múltiplos de ${rule.multiple} unidades${rule.perColor ? ' por color' : ''} (${rule.multiple}, ${rule.multiple * 2}, ${rule.multiple * 3}…), según la ficha del proveedor.`
+                  : 'La ficha no publica una cantidad mínima: te la confirmamos al cotizar.'}
+              </p>
+            </section>
 
             <div className="mt-6">
-              <MagneticButton>
-                <a
-                  href={whatsappHref(quoteMessage)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-cta="producto"
-                  className="inline-flex items-center gap-2 h-14 px-8 rounded-full bg-danger hover:bg-danger-600 text-white font-semibold transition-colors duration-200 shadow-danger-glow"
-                >
-                  Cotizar este producto
-                </a>
-              </MagneticButton>
-              <p className="mt-3 text-sm text-slate-500">
-                Indícanos cantidad, ciudad de entrega y fecha requerida; confirmamos técnica de marcación y disponibilidad.
-              </p>
+              <ProductActions slug={product.slug} sku={product.sku} name={product.displayName} categorySlug={product.categoriaSlug} />
             </div>
 
-            <dl className="mt-8 divide-y divide-slate-100 rounded-2xl border border-slate-100 text-sm">
-              <div className="grid grid-cols-3 gap-4 px-4 py-3">
-                <dt className="text-slate-500">SKU</dt>
-                <dd className="col-span-2 text-ink-700">{product.sku}</dd>
-              </div>
-              {product.specs.map((spec) => (
-                <div key={spec.label} className="grid grid-cols-3 gap-4 px-4 py-3">
-                  <dt className="text-slate-500">{spec.label}</dt>
-                  <dd className="col-span-2 text-ink-700">{spec.value}</dd>
-                </div>
+            {attributes.length > 0 && (
+              <section aria-labelledby="atributos-producto" className="mt-8">
+                <h2 id="atributos-producto" className="text-sm font-semibold text-ink-700">
+                  Características
+                </h2>
+                <dl className="mt-2 divide-y divide-slate-100 rounded-2xl border border-slate-100 text-sm">
+                  {attributes.map((spec) => (
+                    <div key={spec.label} className="grid grid-cols-3 gap-4 px-4 py-3">
+                      <dt className="text-slate-600">{spec.label}</dt>
+                      <dd className="col-span-2 text-ink-700">{spec.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            )}
+
+            <section aria-labelledby="condiciones-producto" className="mt-6 rounded-2xl bg-slate-50 p-4 text-sm text-slate-700">
+              <h2 id="condiciones-producto" className="font-semibold text-ink-700">
+                Se confirma al cotizar
+              </h2>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Colores y disponibilidad del modelo.</li>
+                <li>Valor por unidad con la marcación de tu logo.</li>
+                <li>Técnica y área de marcación definitivas.</li>
+                <li>Tiempos de producción y opciones de entrega en tu ciudad.</li>
+              </ul>
+              {product.notas.map((nota) => (
+                <p key={nota} className="mt-2">
+                  {nota}
+                </p>
               ))}
-            </dl>
-            {product.notas.map((nota) => (
-              <p key={nota} className="mt-3 text-sm text-slate-500">
-                {nota}
-              </p>
-            ))}
+            </section>
           </div>
         </div>
       </div>

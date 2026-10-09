@@ -68,7 +68,7 @@ export default function CiudadPage({ params }: { params: { ciudad: string } }) {
           target="_blank"
           rel="noopener noreferrer"
           data-cta="ciudad"
-          className="mt-6 inline-flex min-h-12 items-center rounded-full bg-danger px-7 text-sm font-semibold text-white hover:bg-danger-600 transition-colors"
+          className="mt-6 inline-flex min-h-12 items-center rounded-full bg-danger-600 px-7 text-sm font-semibold text-white hover:bg-danger-600 transition-colors"
         >
           Cotizar para {ciudad.nombre}
         </a>

@@ -93,7 +93,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="hero relative overflow-clip bg-navy-900" style={{ minHeight: '100svh' }}>
+    <section ref={sectionRef} className="hero relative overflow-clip bg-navy-900" style={{ minHeight: 'min(100svh, 820px)' }}>
       {/* Z0 — grid geométrico oscuro de fondo */}
       <div
         ref={gridRef}
@@ -114,13 +114,13 @@ export default function HeroSection() {
       <div className="relative z-10 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-x-4 lg:gap-x-6 px-5 sm:px-8 lg:px-10 max-w-[1920px] mx-auto pt-28 lg:pt-32 w-full">
         <p
           ref={eyebrowRef}
-          className="col-span-4 md:col-span-8 lg:col-span-12 text-white/90 text-[clamp(14px,1.05vw,18px)] tracking-[-0.01em] backdrop-blur-sm w-fit rounded-full px-1"
+          className="col-span-4 md:col-span-8 lg:col-span-12 text-white text-[clamp(14px,1.05vw,18px)] tracking-[-0.01em] backdrop-blur-sm w-fit rounded-full px-1"
         >
           Productos promocionales para empresas en toda Colombia
         </p>
 
         <h1
-          className="col-span-4 md:col-span-8 lg:col-span-10 mt-6 text-white font-extrabold leading-[0.98] tracking-tight text-[clamp(2.4rem,7vw,6.2rem)]"
+          className="col-span-4 md:col-span-8 lg:col-span-10 mt-6 text-white font-extrabold leading-[0.98] tracking-tight text-[clamp(2.2rem,6vw,5.2rem)]"
           style={{ overflowWrap: 'break-word' }}
         >
           <span className="block overflow-hidden pb-[0.14em]">
@@ -136,9 +136,9 @@ export default function HeroSection() {
         </h1>
 
         <div ref={copyRef} className="col-span-4 md:col-span-6 lg:col-span-6 mt-8">
-          <p className="text-white/80 text-[clamp(16px,1.1vw,20px)] leading-[1.55] max-w-[46ch] backdrop-blur-sm">
+          <p className="text-white text-[clamp(16px,1.1vw,20px)] leading-[1.55] max-w-[46ch] backdrop-blur-sm">
             Personalizamos artículos promocionales con tu logo para empresas en Bogotá, Medellín, Cali,
-            Barranquilla y Bucaramanga: piezas útiles, memorables y a precio mayorista.
+            Barranquilla, Bucaramanga y el resto del país. Elige en el catálogo y prepara tu cotización.
           </p>
         </div>
 
@@ -158,16 +158,16 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               data-cta="hero"
-              className="inline-flex items-center justify-center h-[58px] px-8 rounded-full bg-danger hover:bg-danger-600 text-white text-[15px] font-semibold transition-colors duration-200 shadow-danger-glow w-full sm:w-auto"
+              className="inline-flex items-center justify-center h-[58px] px-8 rounded-full bg-danger-600 hover:bg-danger-700 text-white text-[15px] font-semibold transition-colors duration-200 shadow-danger-glow w-full sm:w-auto"
             >
-              Cotiza con Nosotros
+              Cotizar por WhatsApp
             </a>
           </MagneticButton>
         </div>
       </div>
 
       <div ref={scrollIndicatorRef} className="absolute bottom-8 left-5 sm:left-8 lg:left-10 z-10">
-        <a href="#categorias" className="group inline-flex items-center gap-3 text-white/80 hover:text-white transition-colors">
+        <a href="#categorias" className="group inline-flex items-center gap-3 text-white hover:text-sky-300 transition-colors">
           <span className="flex items-center justify-center w-11 h-11 rounded-full border border-white/30 group-hover:border-sky-400 transition-colors">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="animate-[scrollBounce_1.8s_ease-in-out_infinite]">
               <path d="M7 1v11M2 7l5 5 5-5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
