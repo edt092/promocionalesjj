@@ -3,20 +3,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import blogPosts from '@/data/blog-posts.json';
+import { pageMetadata } from '@/lib/seo';
+import { formatDate, readingTime } from '@/lib/blog';
 
-export const metadata: Metadata = {
-  title: 'Blog de Productos Promocionales en Colombia',
+export const metadata: Metadata = pageMetadata({
+  title: 'Blog de productos promocionales en Colombia',
   description:
     'Guías y consejos sobre merchandising corporativo, regalos empresariales y productos promocionales para empresas en Colombia.',
-  alternates: { canonical: '/blog/' },
-};
+  path: '/blog/',
+});
 
 export default function BlogPage() {
   return (
     <div className="pt-24 pb-20">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
         <Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Blog' }]} />
-        <h1 className="mt-4 text-3xl sm:text-4xl font-bold text-ink-700">Blog</h1>
+        <h1 className="mt-4 text-3xl sm:text-4xl font-bold text-ink-700">Blog de productos promocionales y merchandising</h1>
         <p className="mt-3 max-w-2xl text-slate-500">
           Guías prácticas sobre productos promocionales y merchandising corporativo para empresas en Colombia.
         </p>
@@ -34,6 +36,7 @@ export default function BlogPage() {
                   alt={post.titulo}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  // Imagen remota (Unsplash): el CDN de Netlify no tiene autorizado ese origen.
                   unoptimized
                 />
               </div>
@@ -44,7 +47,7 @@ export default function BlogPage() {
                 </h2>
                 <p className="mt-2 text-sm text-slate-500 line-clamp-3">{post.extracto}</p>
                 <span className="mt-4 text-xs text-slate-400">
-                  {post.fecha_publicacion} · {post.tiempo_lectura}
+                  <time dateTime={post.fecha_publicacion}>{formatDate(post.fecha_publicacion)}</time> · {readingTime(post.contenido_html)}
                 </span>
               </div>
             </Link>

@@ -54,7 +54,7 @@ const SHOWCASE_PRODUCTS: ShowcaseProduct[] = [
   {
     slug: 'set-de-portavasos-cork',
     nombre: 'Set de Portavasos Cork',
-    categoria: 'Vasos Personalizados',
+    categoria: 'Hogar',
     imagen_url: '/img/productos/set-de-portavasos-cork.jpg',
     sku: 'JJ-000572',
     descripcion_corta: 'Set de 5 portavasos con base en corcho natural, 12cm de diámetro.',
@@ -201,8 +201,7 @@ export default function ProductShowcase() {
                   alt={active.nombre}
                   fill
                   className="object-contain p-10 sm:p-14"
-                  unoptimized
-                  priority
+                  sizes="(min-width: 1024px) 560px, 90vw"
                 />
               </div>
               <span className="absolute bottom-4 right-4 inline-flex items-center gap-1.5 rounded-full bg-white/10 border border-white/15 px-3 py-1.5 text-[12px] text-white/90 backdrop-blur-sm transition-colors duration-150 group-hover:bg-white/20">
@@ -234,6 +233,7 @@ export default function ProductShowcase() {
                   href={whatsappHref(`Hola, me interesa cotizar el producto "${active.nombre}" personalizado para mi empresa en Colombia.`)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-cta="vitrina"
                   className="inline-flex items-center justify-center h-[52px] px-7 rounded-full bg-danger hover:bg-danger-600 text-white text-[14px] font-semibold transition-colors duration-150 w-full sm:w-auto"
                 >
                   Cotiza este producto
@@ -264,8 +264,7 @@ export default function ProductShowcase() {
                     alt=""
                     fill
                     className="object-contain bg-white/5 p-1.5"
-                    unoptimized
-                    loading="eager"
+                    sizes="64px"
                   />
                 </button>
               );
@@ -297,9 +296,9 @@ export default function ProductShowcase() {
               ✕
             </button>
             <div className="relative w-full aspect-square rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden">
-              <Image src={active.imagen_url} alt={active.nombre} fill className="object-contain p-10" unoptimized />
+              <Image src={active.imagen_url} alt={active.nombre} fill sizes="(min-width: 640px) 512px, 90vw" className="object-contain p-10" />
               <div className="absolute bottom-4 right-4 w-14 h-14 rounded-full bg-white shadow-lift p-2 flex items-center justify-center">
-                <Image src="/promocionalesjj_icon.png" alt="Tu logo aquí" width={40} height={40} className="object-contain" unoptimized />
+                <Image src="/promocionalesjj_icon.png" alt="Tu logo aquí" width={40} height={40} className="object-contain" />
               </div>
             </div>
             <h3 className="mt-5 text-white font-bold text-lg">{active.nombre}</h3>

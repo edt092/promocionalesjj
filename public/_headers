@@ -1,0 +1,18 @@
+# Cabeceras de Netlify (se copian a out/ en el build). Ver docs/seo/publicacion-y-seguimiento.md.
+# No hay CSP: se introducirá de forma progresiva (Report-Only primero) cuando exista analítica o formularios
+# externos que deban permitirse; una política copiada podría romper imágenes o scripts.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+# Archivos con hash en el nombre: inmutables.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fotos de producto: nombre estable por slug (pueden reemplazarse con el mismo nombre), por eso no son
+# immutable. Un día de caché fresca y una semana sirviendo la copia anterior mientras se revalida.
+/img/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
